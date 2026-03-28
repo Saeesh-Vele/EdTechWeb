@@ -1,0 +1,232 @@
+{
+  "title": "Backend Roadmap",
+  "main_branches": [
+    {
+      "name": "Pick a Language",
+      "children": [
+        "JavaScript",
+        "Python",
+        "Java",
+        "PHP",
+        "Go",
+        "Ruby",
+        "C#",
+        "Rust"
+      ]
+    },
+    {
+      "name": "Version Control Systems",
+      "children": [
+        "Git"
+      ]
+    },
+    {
+      "name": "Repo Hosting Services",
+      "children": [
+        "GitHub",
+        "GitLab",
+        "Bitbucket"
+      ]
+    },
+    {
+      "name": "Internet",
+      "children": [
+        "How does the Internet work?",
+        "What is HTTP?",
+        "What is Domain Name?",
+        "What is hosting?",
+        "DNS and how it works?",
+        "Browsers and how they work?"
+      ]
+    },
+    {
+      "name": "Relational Databases",
+      "children": [
+        "PostgreSQL",
+        "MySQL",
+        "MariaDB",
+        "MS SQL",
+        "Oracle",
+        "SQLite"
+      ]
+    },
+    {
+      "name": "APIs",
+      "children": [
+        {
+          "name": "Learn about APIs",
+          "topics": [
+            "REST",
+            "JSON APIs",
+            "SOAP",
+            "gRPC",
+            "GraphQL",
+            "HATEOAS",
+            "Open API Specs"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Authentication",
+      "children": [
+        "JWT",
+        "OAuth",
+        "Basic Authentication",
+        "Token Authentication",
+        "Cookie Based Auth",
+        "OpenID",
+        "SAML"
+      ]
+    },
+    {
+      "name": "Caching",
+      "children": [
+        "Redis",
+        "Memcached",
+        "Server Side",
+        "Client Side",
+        "CDN"
+      ]
+    },
+    {
+      "name": "Web Security",
+      "children": [
+        "HTTPS",
+        "OWASP",
+        "CSP",
+        "SSL/TLS",
+        "Server Security",
+        "Hashing (MD5, SHA, bcrypt)",
+        "API Security Best Practices"
+      ]
+    },
+    {
+      "name": "Testing",
+      "children": [
+        "Integration Testing",
+        "Unit Testing",
+        "Functional Testing"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "children": []
+    },
+    {
+      "name": "Software Design & Architecture",
+      "children": [
+        {
+          "name": "Design Principles",
+          "topics": [
+            "GOF Design Patterns",
+            "Domain Driven Design",
+            "Test Driven Development",
+            "CQRS",
+            "Event Sourcing"
+          ]
+        },
+        {
+          "name": "Architectural Patterns",
+          "topics": [
+            "Monolithic Apps",
+            "Microservices",
+            "SOA",
+            "Serverless",
+            "Service Mesh",
+            "Twelve-Factor Apps"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Containerization & Orchestration",
+      "children": [
+        "Docker",
+        "LXC",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Web Servers",
+      "children": [
+        "Nginx",
+        "Apache",
+        "Caddy",
+        "IIS"
+      ]
+    },
+    {
+      "name": "NoSQL Databases",
+      "children": [
+        {
+          "name": "Document DBs",
+          "topics": ["MongoDB", "CouchDB"]
+        },
+        {
+          "name": "Key-Value",
+          "topics": ["Redis", "DynamoDB"]
+        },
+        {
+          "name": "Realtime",
+          "topics": ["Firebase", "RethinkDB"]
+        },
+        {
+          "name": "Time Series",
+          "topics": ["InfluxDB", "Timescale"]
+        },
+        {
+          "name": "Column DBs",
+          "topics": ["Cassandra", "HBase"]
+        },
+        {
+          "name": "Graph DBs",
+          "topics": ["Neo4j", "AWS Neptune"]
+        }
+      ]
+    },
+    {
+      "name": "Search Engines",
+      "children": [
+        "Elasticsearch",
+        "Solr"
+      ]
+    },
+    {
+      "name": "Message Brokers",
+      "children": [
+        "RabbitMQ",
+        "Kafka"
+      ]
+    },
+    {
+      "name": "Real-Time & Performance",
+      "children": [
+        "GraphQL Subscriptions",
+        "Server-Sent Events",
+        "Throttling",
+        "Backpressure",
+        "Load Shedding",
+        "Circuit Breaker"
+      ]
+    },
+    {
+      "name": "Scaling Databases",
+      "children": [
+        "Database Indexes",
+        "Data Replication",
+        "Sharding Strategies",
+        "CAP Theorem"
+      ]
+    },
+    {
+      "name": "Observability",
+      "children": [
+        "Instrumentation",
+        "Monitoring",
+        "Telemetry",
+        "Metrics & Logging"
+      ]
+    }
+  ]
+}

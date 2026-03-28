@@ -1,0 +1,223 @@
+{
+    "title": "Android Roadmap",
+    "main_branches": [
+        {
+            "name": "Pick a Language",
+            "children": [
+                "Kotlin",
+                "Java"
+            ]
+        },
+        {
+            "name": "The Fundamentals",
+            "children": [
+                "Development IDE",
+                "Basics of Kotlin",
+                "Basics of OOP",
+                "Data Structures and Algorithms",
+                "Gradle (What is and how to use it)",
+                "Create a Basic Hello World App"
+            ]
+        },
+        {
+            "name": "Version Control",
+            "children": [
+                "Git"
+            ]
+        },
+        {
+            "name": "VCS Hosting",
+            "children": [
+                "GitHub",
+                "Bitbucket",
+                "GitLab"
+            ]
+        },
+        {
+            "name": "App Components",
+            "children": [
+                {
+                    "name": "Activity",
+                    "topics": [
+                        "Activity Lifecycle",
+                        "State Changes",
+                        "Tasks & Backstack"
+                    ]
+                },
+                {
+                    "name": "Intent",
+                    "topics": [
+                        "Implicit Intents",
+                        "Explicit Intents",
+                        "Intent Filters"
+                    ]
+                },
+                {
+                    "name": "Services"
+                },
+                {
+                    "name": "Broadcast Receiver"
+                },
+                {
+                    "name": "Content Provider"
+                }
+            ]
+        },
+        {
+            "name": "Interface & Navigation",
+            "children": [
+                "Jetpack Compose",
+                "Fragments",
+                "Navigation Components",
+                "App Shortcuts"
+            ]
+        },
+        {
+            "name": "Layouts & UI Elements",
+            "children": [
+                {
+                    "name": "Layouts",
+                    "topics": [
+                        "Frame",
+                        "Linear",
+                        "Relative",
+                        "Constraint",
+                        "RecyclerView"
+                    ]
+                },
+                {
+                    "name": "UI Elements",
+                    "topics": [
+                        "TextView",
+                        "ImageView",
+                        "ListView",
+                        "Buttons",
+                        "EditText",
+                        "Toast",
+                        "Dialogs",
+                        "Tabs",
+                        "Bottom Sheet",
+                        "Drawer",
+                        "Animations"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Storage",
+            "children": [
+                "Shared Preferences",
+                "DataStore",
+                "Room Database",
+                "File System"
+            ]
+        },
+        {
+            "name": "Network",
+            "children": [
+                "Retrofit",
+                "OkHttp",
+                "Apollo-Android"
+            ]
+        },
+        {
+            "name": "Asynchronism",
+            "children": [
+                "Coroutines",
+                "Threads",
+                "RxJava",
+                "RxKotlin",
+                "WorkManager"
+            ]
+        },
+        {
+            "name": "Design & Architecture",
+            "children": [
+                {
+                    "name": "Architectural Patterns",
+                    "topics": [
+                        "MVI",
+                        "MVVM",
+                        "MVP",
+                        "MVC"
+                    ]
+                },
+                {
+                    "name": "Design Patterns",
+                    "topics": [
+                        "Repository Pattern",
+                        "Builder Pattern",
+                        "Factory Pattern",
+                        "Observer Pattern"
+                    ]
+                },
+                {
+                    "name": "Reactive & State",
+                    "topics": [
+                        "Flow",
+                        "LiveData",
+                        "RxJava"
+                    ]
+                },
+                {
+                    "name": "Dependency Injection",
+                    "topics": [
+                        "Dagger",
+                        "Hilt",
+                        "Koin",
+                        "Kodein"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Firebase & Services",
+            "children": [
+                "Authentication",
+                "Crashlytics",
+                "Remote Config",
+                "Cloud Messaging",
+                "Firestore"
+            ]
+        },
+        {
+            "name": "Google Services",
+            "children": [
+                "Google AdMob",
+                "Google Play Services",
+                "Google Maps"
+            ]
+        },
+        {
+            "name": "Testing",
+            "children": [
+                "Espresso",
+                "JUnit"
+            ]
+        },
+        {
+            "name": "Linting",
+            "children": [
+                "Ktlint",
+                "Detekt"
+            ]
+        },
+        {
+            "name": "Debugging & Monitoring",
+            "children": [
+                "Timber",
+                "LeakCanary",
+                "Chucker",
+                "Jetpack Benchmark"
+            ]
+        },
+        {
+            "name": "Distribution",
+            "children": [
+                "Signed APK",
+                "Firebase Distribution",
+                "Google Play Store"
+            ]
+        }
+    ]
+}

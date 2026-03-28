@@ -1,0 +1,72 @@
+{
+    "title": "MLOps",
+    "main_branches": [
+        {
+            "name": "Programming Fundamentals",
+            "children": [
+                "Python",
+                "Go",
+                "Bash"
+            ]
+        },
+        {
+            "name": "Version Control Systems",
+            "children": [
+                "Git",
+                "GitHub"
+            ]
+        },
+        {
+            "name": "Cloud Computing",
+            "children": [
+                "AWS",
+                "Azure",
+                "GCP",
+                "Cloud-native ML Services"
+            ]
+        },
+        {
+            "name": "Containerization",
+            "children": [
+                "Docker",
+                "Kubernetes"
+            ]
+        },
+        {
+            "name": "Machine Learning Fundamentals",
+            "children": []
+        },
+        {
+            "name": "Data Engineering Fundamentals",
+            "children": [
+                "Data Pipelines",
+                "Data Lakes & Warehouses",
+                "Data Ingestion Architecture",
+                "Airflow",
+                "Spark",
+                "Kafka",
+                "Flink"
+            ]
+        },
+        {
+            "name": "MLOps Principles",
+            "children": []
+        },
+        {
+            "name": "MLOps Components",
+            "children": [
+                "Version Control",
+                "CI/CD",
+                "Orchestration",
+                "Experiment Tracking & Model Registry",
+                "Data Lineage & Feature Stores",
+                "Model Training & Serving",
+                "Monitoring & Observability"
+            ]
+        },
+        {
+            "name": "Infrastructure as Code",
+            "children": []
+        }
+    ]
+}

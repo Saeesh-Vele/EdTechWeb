@@ -48,9 +48,13 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
             <span className="nav-icon">📚</span> My Courses
             <span className="nav-badge">6</span>
           </button>
-          <button className="sidebar__nav-item">
+          <NavLink
+            to="/dashboard/assessments"
+            className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
+            onClick={() => setSidebarOpen(false)}
+          >
             <span className="nav-icon">✅</span> Assessments
-          </button>
+          </NavLink>
           <button className="sidebar__nav-item">
             <span className="nav-icon">📈</span> Progress
           </button>

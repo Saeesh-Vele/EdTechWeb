@@ -2,11 +2,25 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./AllCourses.css";
 
+const routeMap: Record<string, string> = {
+    "GameDevelopment": "/dashboard/roadmap/game",
+    "Backend": "/dashboard/roadmap/backend",
+    "Android": "/dashboard/roadmap/android",
+    "Full Stack": "/dashboard/roadmap/fullstack",
+    "DevOps": "/dashboard/roadmap/devops",
+    "Data Analyst": "/dashboard/roadmap/data-analyst",
+    "AI Engineer": "/dashboard/roadmap/ai-engineer",
+    "Data Engineer": "/dashboard/roadmap/data-engineer",
+    "Machine Learning": "/dashboard/roadmap/machine-learning",
+    "iOS": "/dashboard/roadmap/ios",
+    "Blockchain": "/dashboard/roadmap/blockchain",
+    "MlOps": "/dashboard/roadmap/mlops",
+};
+
 const courses = [
     "GameDevelopment", "Backend", "Full Stack", "DevOps",
-    "DevSecOps", "Data Analyst", "AI Engineer", "AI & Data Scientist",
-    "Data Engineer", "Android", "Machine Learning", "PostgreSQL",
-    "iOS", "Blockchain", "QA", "UX Design"
+    "MlOps", "Data Analyst", "AI Engineer", "iOS",
+    "Data Engineer", "Android", "Machine Learning", "Blockchain"
 ];
 
 const AllCourses = () => {
@@ -16,7 +30,7 @@ const AllCourses = () => {
         <div className="allcourses-wrapper">
             <div className="allcourses-header">
                 <h1>Explore Courses</h1>
-                <p>Choose a domain to start learning 🚀</p>
+                <p>Choose a domain to start learning </p>
             </div>
 
             <div className="courses-grid">
@@ -25,8 +39,8 @@ const AllCourses = () => {
                         className="course-card"
                         key={index}
                         onClick={() => {
-                            if (course === "GameDevelopment") {
-                                navigate("/dashboard/roadmap/game");
+                            if (routeMap[course]) {
+                                navigate(routeMap[course]);
                             }
                         }}
                     >
@@ -35,7 +49,7 @@ const AllCourses = () => {
 
                         </div>
 
-                        <div className="bookmark">🔖</div>
+
 
                         {/* glow effect */}
                         <div className="card-glow"></div>

@@ -1,5 +1,5 @@
 {
-  "title": "Backend Roadmap",
+  "title": "Backend ",
   "main_branches": [
     {
       "name": "Pick a Language",
@@ -161,27 +161,45 @@
       "children": [
         {
           "name": "Document DBs",
-          "topics": ["MongoDB", "CouchDB"]
+          "topics": [
+            "MongoDB",
+            "CouchDB"
+          ]
         },
         {
           "name": "Key-Value",
-          "topics": ["Redis", "DynamoDB"]
+          "topics": [
+            "Redis",
+            "DynamoDB"
+          ]
         },
         {
           "name": "Realtime",
-          "topics": ["Firebase", "RethinkDB"]
+          "topics": [
+            "Firebase",
+            "RethinkDB"
+          ]
         },
         {
           "name": "Time Series",
-          "topics": ["InfluxDB", "Timescale"]
+          "topics": [
+            "InfluxDB",
+            "Timescale"
+          ]
         },
         {
           "name": "Column DBs",
-          "topics": ["Cassandra", "HBase"]
+          "topics": [
+            "Cassandra",
+            "HBase"
+          ]
         },
         {
           "name": "Graph DBs",
-          "topics": ["Neo4j", "AWS Neptune"]
+          "topics": [
+            "Neo4j",
+            "AWS Neptune"
+          ]
         }
       ]
     },

@@ -1,0 +1,256 @@
+{
+    "title": "Data Engineer ",
+    "main_branches": [
+        {
+            "name": "Introduction",
+            "children": [
+                "What is Data Engineering?",
+                "Data Engineering vs Data Science",
+                "Skills and Responsibilities",
+                "Data Engineering Lifecycle",
+                "Choosing the Right Technologies"
+            ]
+        },
+        {
+            "name": "Programming Skills",
+            "children": [
+                "Python",
+                "Java",
+                "Scala",
+                "Go",
+                "Data Structures and Algorithms",
+                "Git and GitHub",
+                "Linux Basics",
+                "Networking Fundamentals",
+                "Distributed Systems Basics"
+            ]
+        },
+        {
+            "name": "Data Engineering Lifecycle",
+            "children": [
+                "Data Generation",
+                "Data Storage",
+                "Data Ingestion",
+                "Data Serving"
+            ]
+        },
+        {
+            "name": "Data Collection",
+            "children": [
+                "Sources of Data",
+                "Database",
+                "APIs",
+                "Logs",
+                "Mobile Apps",
+                "IoT",
+                "Data Collection Considerations"
+            ]
+        },
+        {
+            "name": "Data Storage",
+            "children": [
+                "Data Normalization",
+                "Data Modeling Considerations",
+                "OLTP or Relational Databases"
+            ]
+        },
+        {
+            "name": "Relational Databases",
+            "children": [
+                "PostgreSQL",
+                "MySQL",
+                "Oracle",
+                "SQL Server"
+            ]
+        },
+        {
+            "name": "NoSQL Databases",
+            "children": [
+                {
+                    "name": "Document",
+                    "topics": [
+                        "MongoDB",
+                        "CouchDB",
+                        "Elasticsearch"
+                    ]
+                },
+                {
+                    "name": "Column",
+                    "topics": [
+                        "Cassandra",
+                        "HBase",
+                        "BigTable"
+                    ]
+                },
+                {
+                    "name": "Graph",
+                    "topics": [
+                        "Neo4j",
+                        "Amazon Neptune"
+                    ]
+                },
+                {
+                    "name": "Key-Value",
+                    "topics": [
+                        "Redis",
+                        "DynamoDB"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Data Warehousing",
+            "children": [
+                "What is Data Warehouse?",
+                "Google BigQuery",
+                "Snowflake",
+                "Amazon Redshift",
+                "Data Lake",
+                "Databricks Delta Lake"
+            ]
+        },
+        {
+            "name": "Data Warehousing Architectures",
+            "children": [
+                "Data Mart",
+                "Data Mesh",
+                "Data Fabric",
+                "Data Hub",
+                "Metadata-first Architecture",
+                "Serverless Options"
+            ]
+        },
+        {
+            "name": "Cloud Computing",
+            "children": [
+                {
+                    "name": "Cloud Providers",
+                    "topics": [
+                        "AWS",
+                        "Azure",
+                        "Google Cloud"
+                    ]
+                },
+                "S3",
+                "Glue"
+            ]
+        },
+        {
+            "name": "Data Ingestion",
+            "children": [
+                {
+                    "name": "Types",
+                    "topics": [
+                        "Batch",
+                        "Stream",
+                        "Hybrid"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Data Pipelines",
+            "children": [
+                "ETL Process",
+                "Apache Airflow",
+                "dbt",
+                "Luigi",
+                "Prefect"
+            ]
+        },
+        {
+            "name": "Big Data Tools",
+            "children": [
+                "Apache Spark",
+                "Hadoop Ecosystem",
+                "HDFS",
+                "YARN"
+            ]
+        },
+        {
+            "name": "Containers & Orchestration",
+            "children": [
+                "Docker",
+                "Kubernetes",
+                "GKE",
+                "EKS"
+            ]
+        },
+        {
+            "name": "CI/CD & Monitoring",
+            "children": [
+                "GitHub Actions",
+                "CircleCI",
+                "ArgoCD",
+                "Prometheus",
+                "Datadog",
+                "Sentry",
+                "New Relic"
+            ]
+        },
+        {
+            "name": "Testing",
+            "children": [
+                "Unit Testing",
+                "Integration Testing",
+                "End-to-End Testing",
+                "A/B Testing",
+                "Smoke Testing"
+            ]
+        },
+        {
+            "name": "Messaging Systems",
+            "children": [
+                "Kafka",
+                "RabbitMQ",
+                "SQS",
+                "SNS"
+            ]
+        },
+        {
+            "name": "Infrastructure as Code",
+            "children": [
+                "Terraform",
+                "AWS CDK",
+                "Pulumi"
+            ]
+        },
+        {
+            "name": "Data Serving",
+            "children": [
+                "APIs",
+                "Dashboards",
+                "Business Intelligence"
+            ]
+        },
+        {
+            "name": "Security",
+            "children": []
+        },
+        {
+            "name": "Data Governance",
+            "children": [
+                "Data Quality",
+                "Data Lineage",
+                "Metadata Interoperability",
+                "Data Interoperability"
+            ]
+        },
+        {
+            "name": "Privacy",
+            "children": [
+                "GDPR",
+                "CCPA",
+                "EU AI Act"
+            ]
+        },
+        {
+            "name": "Machine Learning",
+            "children": []
+        },
+        {
+            "name": "MLOps",
+            "children": []
+        }
+    ]
+}

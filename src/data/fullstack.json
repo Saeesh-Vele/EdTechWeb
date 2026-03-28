@@ -1,0 +1,140 @@
+{
+    "title": "Full Stack ",
+    "main_branches": [
+        {
+            "name": "Frontend Basics",
+            "children": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                {
+                    "name": "Checkpoints",
+                    "topics": [
+                        "Static Webpages",
+                        "Interactivity",
+                        "Collaborative Work",
+                        "External Packages"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Frontend Frameworks",
+            "children": [
+                "React",
+                "Tailwind CSS",
+                {
+                    "name": "Checkpoint",
+                    "topics": [
+                        "Frontend Apps"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Package Management",
+            "children": [
+                "npm"
+            ]
+        },
+        {
+            "name": "Version Control",
+            "children": [
+                "Git"
+            ]
+        },
+        {
+            "name": "Repo Hosting Services",
+            "children": [
+                "GitHub"
+            ]
+        },
+        {
+            "name": "Backend Development",
+            "children": [
+                "Node.js",
+                {
+                    "name": "Checkpoints",
+                    "topics": [
+                        "CLI Apps",
+                        "Simple CRUD Apps"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Databases",
+            "children": [
+                "PostgreSQL",
+                "Redis"
+            ]
+        },
+        {
+            "name": "Authentication",
+            "children": [
+                "JWT Auth"
+            ]
+        },
+        {
+            "name": "APIs",
+            "children": [
+                "RESTful APIs"
+            ]
+        },
+        {
+            "name": "Cloud & AWS Basics",
+            "children": [
+                {
+                    "name": "AWS Services",
+                    "topics": [
+                        "EC2",
+                        "S3",
+                        "VPC",
+                        "Route53",
+                        "SES"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "DevOps Basics",
+            "children": [
+                "Linux Basics",
+                {
+                    "name": "Checkpoints",
+                    "topics": [
+                        "Complete App",
+                        "Deployment",
+                        "Monitoring"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CI/CD",
+            "children": [
+                "GitHub Actions"
+            ]
+        },
+        {
+            "name": "Monitoring",
+            "children": [
+                "Monitoring Tools"
+            ]
+        },
+        {
+            "name": "Automation & Infrastructure",
+            "children": [
+                "Ansible",
+                "Terraform",
+                {
+                    "name": "Checkpoints",
+                    "topics": [
+                        "Automation",
+                        "Infrastructure"
+                    ]
+                }
+            ]
+        }
+    ]
+}

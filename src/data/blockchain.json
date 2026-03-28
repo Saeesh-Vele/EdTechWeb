@@ -1,0 +1,237 @@
+{
+    "title": "Blockchain ",
+    "main_branches": [
+        {
+            "name": "Basic Blockchain Knowledge",
+            "children": [
+                "What is Blockchain",
+                "Decentralization",
+                "Why it matters",
+                "Blockchain Structure",
+                "Basic Blockchain Operations",
+                "Applications and Uses"
+            ]
+        },
+        {
+            "name": "General Blockchain Knowledge",
+            "children": [
+                "Mining and Incentive Models",
+                "Decentralization vs Trust",
+                "Blockchain Forking",
+                "Cryptocurrencies",
+                "Cryptowallets",
+                "Storage",
+                "Cryptography",
+                "Consensus Protocols",
+                "Blockchain Interoperability"
+            ]
+        },
+        {
+            "name": "Blockchains",
+            "children": [
+                {
+                    "name": "EVM-Based",
+                    "topics": [
+                        "Ethereum",
+                        "Polygon",
+                        "Binance Smart Chain",
+                        "Genesis Chain",
+                        "Huobi Eco Chain",
+                        "Avalanche",
+                        "Fantom",
+                        "Moonbeam / Moonriver"
+                    ]
+                },
+                {
+                    "name": "TVM-Based",
+                    "topics": [
+                        "Everscale",
+                        "Gosh",
+                        "Venom",
+                        "TON"
+                    ]
+                },
+                {
+                    "name": "Other Chains",
+                    "topics": [
+                        "Solana",
+                        "TON"
+                    ]
+                },
+                {
+                    "name": "Layer 2",
+                    "topics": [
+                        "Arbitrum",
+                        "Moonbeam / Moonriver"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Oracles",
+            "children": [
+                "Hybrid Smart Contracts",
+                "Chainlink",
+                "Oracle Networks"
+            ]
+        },
+        {
+            "name": "Smart Contracts",
+            "children": [
+                {
+                    "name": "Programming Languages",
+                    "topics": [
+                        "Solidity",
+                        "Vyper",
+                        "Rust"
+                    ]
+                },
+                {
+                    "name": "Frameworks",
+                    "topics": [
+                        "Hardhat",
+                        "Truffle",
+                        "Brownie",
+                        "Foundry"
+                    ]
+                },
+                {
+                    "name": "Testing",
+                    "topics": [
+                        "Unit Tests",
+                        "Integration Tests",
+                        "Code Coverage"
+                    ]
+                },
+                "IDEs",
+                "Deployment",
+                "Monitoring",
+                "Upgrades"
+            ]
+        },
+        {
+            "name": "Security",
+            "children": [
+                {
+                    "name": "Tools",
+                    "topics": [
+                        "Slither",
+                        "MythX",
+                        "Manticore",
+                        "Echidna"
+                    ]
+                },
+                {
+                    "name": "Practices",
+                    "topics": [
+                        "Fuzz Testing & Static Analysis",
+                        "Common Threat Vectors",
+                        "Source of Randomness Attacks"
+                    ]
+                },
+                "OpenZeppelin"
+            ]
+        },
+        {
+            "name": "Management Platforms",
+            "children": [
+                "ERC Tokens",
+                "Crypto Wallets",
+                "Crypto Faucets",
+                "Decentralized Storage"
+            ]
+        },
+        {
+            "name": "Version Control Systems",
+            "children": [
+                "Git"
+            ]
+        },
+        {
+            "name": "Repo Hosting Services",
+            "children": [
+                "GitHub",
+                "GitLab",
+                "Bitbucket"
+            ]
+        },
+        {
+            "name": "dApps (Decentralized Applications)",
+            "children": [
+                {
+                    "name": "Supporting Languages",
+                    "topics": [
+                        "JavaScript",
+                        "Go",
+                        "Python"
+                    ]
+                },
+                {
+                    "name": "Frontend Frameworks",
+                    "topics": [
+                        "React",
+                        "Vue",
+                        "Angular"
+                    ]
+                },
+                {
+                    "name": "Client Libraries",
+                    "topics": [
+                        "web3.js",
+                        "ethers.js"
+                    ]
+                },
+                {
+                    "name": "Client Nodes",
+                    "topics": [
+                        "Geth",
+                        "Besu",
+                        "Nethermind"
+                    ]
+                },
+                {
+                    "name": "Node as a Service",
+                    "topics": [
+                        "Alchemy",
+                        "Infura",
+                        "Moralis",
+                        "QuickNode"
+                    ]
+                },
+                {
+                    "name": "Testing & Deployment",
+                    "topics": [
+                        "Testing",
+                        "Deployment",
+                        "Maintenance",
+                        "Architecture",
+                        "Security"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Use Cases",
+            "children": [
+                "DeFi",
+                "DAOs",
+                "NFTs",
+                "Payments",
+                "Insurance"
+            ]
+        },
+        {
+            "name": "Scaling",
+            "children": [
+                "State & Payment Channels",
+                "Optimistic Rollups & Fraud Proofs",
+                "ZK Rollups & Zero Knowledge Proofs",
+                "Validium",
+                "Plasma",
+                "Sidechains",
+                "Ethereum 2.0",
+                "On-Chain Scaling"
+            ]
+        }
+    ]
+}

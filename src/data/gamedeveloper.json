@@ -1,5 +1,5 @@
 {
-  "title": "Game Developer Roadmap",
+  "title": "Game Developer",
   "main_branches": [
     {
       "name": "Client Side Development",
@@ -14,7 +14,10 @@
       "children": [
         {
           "name": "Linear Algebra",
-          "topics": ["Vector", "Matrix"]
+          "topics": [
+            "Vector",
+            "Matrix"
+          ]
         },
         {
           "name": "Linear Transformation"
@@ -30,15 +33,26 @@
         },
         {
           "name": "Projection",
-          "topics": ["Perspective", "Orthogonal"]
+          "topics": [
+            "Perspective",
+            "Orthogonal"
+          ]
         },
         {
           "name": "Orientation",
-          "topics": ["Quaternion", "Euler Angle"]
+          "topics": [
+            "Quaternion",
+            "Euler Angle"
+          ]
         },
         {
           "name": "Curve",
-          "topics": ["Spline", "Hermite", "Bezier", "Catmull-Rom"]
+          "topics": [
+            "Spline",
+            "Hermite",
+            "Bezier",
+            "Catmull-Rom"
+          ]
         }
       ]
     },
@@ -79,15 +93,26 @@
         },
         {
           "name": "Intersection",
-          "topics": ["SAT", "GJK", "EPA"]
+          "topics": [
+            "SAT",
+            "GJK",
+            "EPA"
+          ]
         },
         {
           "name": "Bounding Volume",
-          "topics": ["OBB", "AABB"]
+          "topics": [
+            "OBB",
+            "AABB"
+          ]
         },
         {
           "name": "Spatial Partitioning",
-          "topics": ["Sort & Sweep", "DBVT", "BVH"]
+          "topics": [
+            "Sort & Sweep",
+            "DBVT",
+            "BVH"
+          ]
         }
       ]
     },
@@ -165,11 +190,20 @@
       "children": [
         {
           "name": "Shadow Map",
-          "topics": ["2D", "Cube", "Cascaded"]
+          "topics": [
+            "2D",
+            "Cube",
+            "Cascaded"
+          ]
         },
         {
           "name": "Light Source",
-          "topics": ["Directional", "Point", "Spot", "Infinite"]
+          "topics": [
+            "Directional",
+            "Point",
+            "Spot",
+            "Infinite"
+          ]
         }
       ]
     },

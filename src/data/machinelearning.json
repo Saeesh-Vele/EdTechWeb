@@ -1,0 +1,244 @@
+{
+    "title": "Machine Learning ",
+    "main_branches": [
+        {
+            "name": "Introduction",
+            "children": [
+                "What is an ML Engineer?",
+                "ML Engineer vs Data Engineer",
+                "Skills and Responsibilities"
+            ]
+        },
+        {
+            "name": "Mathematical Foundations",
+            "children": [
+                {
+                    "name": "Calculus",
+                    "topics": [
+                        "Derivatives",
+                        "Partial Derivatives",
+                        "Chain Rule",
+                        "Gradients",
+                        "Jacobian",
+                        "Hessian"
+                    ]
+                },
+                {
+                    "name": "Linear Algebra",
+                    "topics": [
+                        "Matrix Operations",
+                        "Vectors and Tensors",
+                        "Determinants",
+                        "Inverse Matrices",
+                        "Eigenvalues",
+                        "Eigenvectors"
+                    ]
+                },
+                {
+                    "name": "Probability",
+                    "topics": [
+                        "Basics of Probability",
+                        "Bayes Theorem",
+                        "Distributions",
+                        "PDFs",
+                        "Variance"
+                    ]
+                },
+                {
+                    "name": "Statistics",
+                    "topics": [
+                        "Descriptive Statistics",
+                        "Inferential Statistics"
+                    ]
+                },
+                "Discrete Mathematics"
+            ]
+        },
+        {
+            "name": "Programming",
+            "children": [
+                "Python",
+                {
+                    "name": "Programming Fundamentals",
+                    "topics": [
+                        "Variables and Data Types",
+                        "Data Structures",
+                        "Loops",
+                        "Conditionals",
+                        "Exceptions",
+                        "Functions"
+                    ]
+                },
+                {
+                    "name": "Libraries",
+                    "topics": [
+                        "NumPy",
+                        "Pandas",
+                        "Matplotlib",
+                        "Seaborn"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Data Handling",
+            "children": [
+                {
+                    "name": "Data Sources",
+                    "topics": [
+                        "Databases (SQL, NoSQL)",
+                        "APIs",
+                        "Internet",
+                        "Mobile Apps",
+                        "IoT"
+                    ]
+                },
+                {
+                    "name": "Data Formats",
+                    "topics": [
+                        "CSV",
+                        "Excel",
+                        "Other Formats"
+                    ]
+                },
+                {
+                    "name": "Data Cleaning",
+                    "topics": [
+                        "Preprocessing",
+                        "Feature Engineering",
+                        "Normalization",
+                        "Dimensionality Reduction",
+                        "Feature Selection"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Machine Learning Basics",
+            "children": [
+                "What is Machine Learning?",
+                "Types of Machine Learning",
+                "Scikit-learn"
+            ]
+        },
+        {
+            "name": "Supervised Learning",
+            "children": [
+                {
+                    "name": "Classification",
+                    "topics": [
+                        "KNN",
+                        "Logistic Regression",
+                        "Support Vector Machines",
+                        "Gradient Boosting"
+                    ]
+                },
+                {
+                    "name": "Regression",
+                    "topics": [
+                        "Linear Regression",
+                        "Dimensionality Reduction",
+                        "PCA",
+                        "Autoencoders"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unsupervised Learning",
+            "children": [
+                {
+                    "name": "Clustering",
+                    "topics": [
+                        "K-Means",
+                        "Hierarchical",
+                        "Probabilistic"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Reinforcement Learning",
+            "children": [
+                "Policy Gradients",
+                "Actor-Critic Methods",
+                "Q-Learning"
+            ]
+        },
+        {
+            "name": "Model Evaluation",
+            "children": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1 Score",
+                "ROC-AUC",
+                "Log Loss",
+                "Cross Validation",
+                "LOOCV"
+            ]
+        },
+        {
+            "name": "Deep Learning",
+            "children": [
+                {
+                    "name": "Neural Networks",
+                    "topics": [
+                        "Perceptron",
+                        "Multi-layer Perceptron",
+                        "Forward Propagation",
+                        "Backpropagation",
+                        "Loss Functions"
+                    ]
+                },
+                {
+                    "name": "Libraries",
+                    "topics": [
+                        "TensorFlow",
+                        "Keras",
+                        "PyTorch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Deep Learning Architectures",
+            "children": [
+                {
+                    "name": "CNN",
+                    "topics": [
+                        "Image Classification",
+                        "Image Segmentation",
+                        "Video Processing"
+                    ]
+                },
+                {
+                    "name": "Transformers",
+                    "topics": [
+                        "Self-Attention",
+                        "Multi-head Attention"
+                    ]
+                },
+                "GANs",
+                "Autoencoders"
+            ]
+        },
+        {
+            "name": "Natural Language Processing",
+            "children": [
+                "Tokenization",
+                "Lemmatization",
+                "Embeddings",
+                "Attention Models",
+                "Stemming"
+            ]
+        },
+        {
+            "name": "Advanced Topics",
+            "children": [
+                "Explainable AI",
+                "Recommendation Systems"
+            ]
+        }
+    ]
+}

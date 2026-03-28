@@ -3,12 +3,24 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import "./index.css";
 import { useToast } from "./hooks/useToast";
 
+import LandingPage from "./pages/LandingPage/LandingPage";
 import AuthPage from "./pages/AuthPage/AuthPage";
+import DashboardPage from "./pages/DashboardPage/DashboardPage";
 import DashboardOverview from "./pages/DashboardPage/DashboardOverview/DashboardOverview";
 import AllCourses from "./pages/DashboardPage/AllCourses/AllCourses";
 import GameRoadmap from "./pages/DashboardPage/RoadMaps/GameRoadmap/GameRoadmap";
+import BackendRoadmap from "./pages/DashboardPage/RoadMaps/Backend/BackendRoadmap";
+import AndroidRoadmap from "./pages/DashboardPage/RoadMaps/Android/AndroidRoadmap";
+import FullStackRoadmap from "./pages/DashboardPage/RoadMaps/FullStack/FullStackRoadmap";
+import DevOpsRoadmap from "./pages/DashboardPage/RoadMaps/DevOps/DevOps";
+import DataAnalystRoadmap from "./pages/DashboardPage/RoadMaps/DataAnalyst/DataAnalyst";
+import AIEngineerRoadmap from "./pages/DashboardPage/RoadMaps/AiEngineer/AiEngineer";
+import DataEngineerRoadmap from "./pages/DashboardPage/RoadMaps/DataEngineer/DataEngineer";
+import MachineLearningRoadmap from "./pages/DashboardPage/RoadMaps/MachineLearning/MachineLearning";
+import IOSRoadmap from "./pages/DashboardPage/RoadMaps/IosDevloper/IosDevloper";
+import BlockchainRoadmap from "./pages/DashboardPage/RoadMaps/BlockChain/BlockChain";
+import MLOpsRoadmap from "./pages/DashboardPage/RoadMaps/MlOps/MlOps";
 import Assessments from "./pages/Assessments/Assessments";
-
 import Layout from "./components/Layout";
 import { ToastContainer } from "./components/Toast/Toast";
 
@@ -19,16 +31,26 @@ const App: FC = () => {
     <>
       <Routes>
         {/* Default Redirect to Dashboard */}
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
-        
+        <Route path="/" element={<LandingPage showToast={showToast} />} />
+
         <Route path="/auth" element={<AuthPage showToast={showToast} />} />
 
-        {/* Protected Routes Wrapper */}
-        <Route element={<Layout />}>
-          <Route path="/dashboard" element={<DashboardOverview />} />
-          <Route path="/dashboard/allcourses" element={<AllCourses />} />
-          <Route path="/dashboard/roadmap/game" element={<GameRoadmap />} />
-          <Route path="/assessments" element={<Assessments />} />
+        <Route path="/dashboard" element={<DashboardPage showToast={showToast} />}>
+          <Route index element={<DashboardOverview />} />
+          <Route path="allcourses" element={<AllCourses />} />
+          <Route path="roadmap/game" element={<GameRoadmap />} />
+          <Route path="roadmap/backend" element={<BackendRoadmap />} />
+          <Route path="roadmap/android" element={<AndroidRoadmap />} />
+          <Route path="roadmap/fullstack" element={<FullStackRoadmap />} />
+          <Route path="roadmap/devops" element={<DevOpsRoadmap />} />
+          <Route path="roadmap/data-analyst" element={<DataAnalystRoadmap />} />
+          <Route path="roadmap/ai-engineer" element={<AIEngineerRoadmap />} />
+          <Route path="roadmap/data-engineer" element={<DataEngineerRoadmap />} />
+          <Route path="roadmap/machine-learning" element={<MachineLearningRoadmap />} />
+          <Route path="roadmap/ios" element={<IOSRoadmap />} />
+          <Route path="roadmap/blockchain" element={<BlockchainRoadmap />} />
+          <Route path="roadmap/mlops" element={<MLOpsRoadmap />} />
+          <Route path="assessments" element={<Assessments />} />
         </Route>
       </Routes>
       <ToastContainer toasts={toasts} />

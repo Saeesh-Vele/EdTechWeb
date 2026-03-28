@@ -1,0 +1,242 @@
+{
+    "title": "iOS Developer",
+    "main_branches": [
+        {
+            "name": "iOS Architecture",
+            "children": [
+                "Core OS",
+                "Core Services",
+                "Cocoa Touch"
+            ]
+        },
+        {
+            "name": "Programming Fundamentals",
+            "children": [
+                {
+                    "name": "Core Programming Concepts",
+                    "topics": [
+                        "OOP",
+                        "Functional Programming",
+                        "Memory Management",
+                        "ViewController Lifecycle",
+                        "Error Handling",
+                        "Concurrency (GCD, async/await)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Version Control Systems",
+            "children": [
+                "Git",
+                "GitHub"
+            ]
+        },
+        {
+            "name": "Xcode",
+            "children": [
+                {
+                    "name": "Setup",
+                    "topics": [
+                        "Installing",
+                        "Preferences",
+                        "New Project"
+                    ]
+                },
+                {
+                    "name": "Navigation",
+                    "topics": [
+                        "Interface Overview",
+                        "Toolbar",
+                        "Navigators",
+                        "Project Files",
+                        "Groups"
+                    ]
+                },
+                {
+                    "name": "Debugging",
+                    "topics": [
+                        "Breakpoints",
+                        "Debug Navigator",
+                        "Stepping"
+                    ]
+                },
+                {
+                    "name": "Interface Builder",
+                    "topics": [
+                        "IBOutlets",
+                        "Auto Layout"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "UI Development",
+            "children": [
+                {
+                    "name": "UIKit",
+                    "topics": [
+                        "Components",
+                        "Views",
+                        "View Controllers",
+                        "User Interactions",
+                        "Storyboards",
+                        "XIBs",
+                        "Navigation",
+                        "View Transitions"
+                    ]
+                },
+                {
+                    "name": "SwiftUI",
+                    "topics": [
+                        "Declarative Syntax",
+                        "Components",
+                        "State Management",
+                        "Data Binding",
+                        "Building Interfaces",
+                        "Views and Modifiers",
+                        "View Transitions"
+                    ]
+                },
+                "UI Design (HIG)"
+            ]
+        },
+        {
+            "name": "Navigation & Architecture",
+            "children": [
+                {
+                    "name": "Architectural Patterns",
+                    "topics": [
+                        "MVC",
+                        "MVP",
+                        "MVVM",
+                        "MVVM-C",
+                        "TCA",
+                        "VIPER"
+                    ]
+                },
+                {
+                    "name": "Navigation",
+                    "topics": [
+                        "Navigation Stack",
+                        "Navigation View",
+                        "Navigation Link",
+                        "Presentation / Modals"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Reactive Programming",
+            "children": [
+                {
+                    "name": "Combine",
+                    "topics": [
+                        "Publishers / Subscribers",
+                        "Operators / Pipelines",
+                        "Schedulers",
+                        "Combine with MVVM"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Data Persistence",
+            "children": [
+                "Core Data",
+                "UserDefaults",
+                "Keychain",
+                "File System",
+                "SQLite"
+            ]
+        },
+        {
+            "name": "Networking",
+            "children": [
+                "HTTP / HTTPS",
+                "GraphQL",
+                "URLSession",
+                "Alamofire"
+            ]
+        },
+        {
+            "name": "Concurrency & Multithreading",
+            "children": [
+                "GCD",
+                "Operation Queues",
+                "Async / Await"
+            ]
+        },
+        {
+            "name": "Dependency Management",
+            "children": [
+                "CocoaPods",
+                "Carthage",
+                "Swift Package Manager"
+            ]
+        },
+        {
+            "name": "Code Quality & Linting",
+            "children": [
+                "SwiftLint",
+                "Tailor",
+                "SwiftFormat"
+            ]
+        },
+        {
+            "name": "Debugging & Profiling",
+            "children": [
+                "Xcode Debugger",
+                "Instruments"
+            ]
+        },
+        {
+            "name": "CI/CD",
+            "children": [
+                "Jenkins",
+                "CircleCI",
+                "GitHub Actions",
+                "GitLab CI",
+                "Azure DevOps",
+                "Fastlane"
+            ]
+        },
+        {
+            "name": "Testing",
+            "children": [
+                "Unit Testing",
+                "UI Testing",
+                "XCTest",
+                "XCUITest",
+                "Test Plans & Coverage"
+            ]
+        },
+        {
+            "name": "Common Frameworks",
+            "children": [
+                "ARKit",
+                "HealthKit",
+                "GameKit",
+                "MapKit",
+                "Core ML"
+            ]
+        },
+        {
+            "name": "App Distribution",
+            "children": [
+                "TestFlight",
+                "App Store Distribution"
+            ]
+        },
+        {
+            "name": "Optimization & Learning",
+            "children": [
+                "App Store Optimization (ASO)",
+                "WWDC Updates",
+                "Latest Swift Version",
+                "Latest iOS SDK",
+                "New Feature Announcements"
+            ]
+        }
+    ]
+}

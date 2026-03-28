@@ -4,12 +4,12 @@ import { generateQuestions, type QuizQuestion } from '../../utils/gemini';
 
 const Assessments: React.FC = () => {
     const [domains, setDomains] = useState<DomainOption[]>([]);
-    
+
     // Selection state
     const [selectedDomain, setSelectedDomain] = useState<string>('');
     const [selectedSkill, setSelectedSkill] = useState<string>('');
     const [selectedDifficulty, setSelectedDifficulty] = useState<'Easy' | 'Medium' | 'Hard'>('Medium');
-    
+
     // Quiz State
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
@@ -39,7 +39,7 @@ const Assessments: React.FC = () => {
 
     const handleGenerate = async () => {
         if (!selectedDomain || !selectedSkill) return;
-        
+
         const domainObj = domains.find(d => d.id === selectedDomain);
         if (!domainObj) return;
 
@@ -85,22 +85,22 @@ const Assessments: React.FC = () => {
             <div className="bg-[#111111] border border-[#2a2a2a] p-6 rounded-2xl mb-6 flex flex-col md:flex-row gap-6 md:items-end shadow-sm transiton-colors hover:border-[#3a3a3a]">
                 {/* Domain Dropdown */}
                 <div className="flex flex-col gap-2 w-full md:w-1/4">
-                     <label className="text-xs font-bold uppercase tracking-widest text-[#6b6b6b]">Domain</label>
-                     <select 
+                    <label className="text-xs font-bold uppercase tracking-widest text-[#6b6b6b]">Domain</label>
+                    <select
                         className="bg-[#1a1a1a] border border-[#3a3a3a] text-[#f5f5f5] placeholder-[#6b6b6b] rounded-lg px-4 py-2.5 w-full focus:outline-none focus:border-[#f5f5f5] hover:border-[#6b6b6b] transition-colors appearance-none cursor-pointer"
                         value={selectedDomain}
                         onChange={e => setSelectedDomain(e.target.value)}
-                     >
+                    >
                         {domains.map(d => (
                             <option key={d.id} value={d.id}>{d.name}</option>
                         ))}
-                     </select>
+                    </select>
                 </div>
 
                 {/* Skill Dropdown */}
                 <div className="flex flex-col gap-2 w-full md:w-1/4">
-                    <label className="text-xs font-bold uppercase tracking-widest text-[#6b6b6b]">Skill</label>
-                    <select 
+                    <label className="text-xs font-bold uppercase tracking-widest text-[#6b6b6b]">Topics</label>
+                    <select
                         className="bg-[#1a1a1a] border border-[#3a3a3a] text-[#f5f5f5] placeholder-[#6b6b6b] rounded-lg px-4 py-2.5 w-full focus:outline-none focus:border-[#f5f5f5] hover:border-[#6b6b6b] transition-colors appearance-none cursor-pointer"
                         value={selectedSkill}
                         onChange={e => setSelectedSkill(e.target.value)}
@@ -119,11 +119,10 @@ const Assessments: React.FC = () => {
                             <button
                                 key={level}
                                 onClick={() => setSelectedDifficulty(level as any)}
-                                className={`px-4 py-2 text-sm font-semibold rounded-lg border transition-all ${
-                                    selectedDifficulty === level 
-                                    ? 'bg-[#f5f5f5] border-[#f5f5f5] text-[#0a0a0a]' 
+                                className={`px-4 py-2 text-sm font-semibold rounded-lg border transition-all ${selectedDifficulty === level
+                                    ? 'bg-[#f5f5f5] border-[#f5f5f5] text-[#0a0a0a]'
                                     : 'bg-[#1a1a1a] border-[#3a3a3a] text-[#b0b0b0] hover:text-[#f5f5f5] hover:border-[#6b6b6b]'
-                                }`}
+                                    }`}
                             >
                                 {level}
                             </button>
@@ -133,16 +132,16 @@ const Assessments: React.FC = () => {
 
                 {/* Generate Button */}
                 <div className="mt-4 md:mt-0 md:ml-auto w-full md:w-auto flex">
-                    <button 
+                    <button
                         onClick={handleGenerate}
                         disabled={loading}
                         className="bg-[#f5f5f5] hover:bg-[#e0e0e0] text-[#0a0a0a] px-5 py-2.5 rounded-lg font-bold transition-all focus:outline-none focus:ring-2 focus:ring-white/20 disabled:opacity-50 flex items-center justify-center gap-2 w-full shadow-sm hover:-translate-y-0.5"
                     >
                         {loading && (
-                           <svg className="animate-spin h-4 w-4 text-[#0a0a0a]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                             <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                           </svg>
+                            <svg className="animate-spin h-4 w-4 text-[#0a0a0a]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
                         )}
                         {loading ? 'Generating...' : 'Generate Questions'}
                     </button>
@@ -166,7 +165,7 @@ const Assessments: React.FC = () => {
                                 {q.options.map((opt, optIdx) => {
                                     const isSelected = userAnswers[i] === opt;
                                     let optionStyle = 'bg-[#1a1a1a] border-[#3a3a3a] hover:bg-[#222222] hover:border-[#6b6b6b] text-[#b0b0b0]';
-                                    
+
                                     if (isSelected && !hasSubmitted) {
                                         optionStyle = 'bg-[#f5f5f5] border-[#f5f5f5] text-[#0a0a0a] font-medium shadow-sm';
                                     } else if (hasSubmitted) {
@@ -178,12 +177,11 @@ const Assessments: React.FC = () => {
                                     }
 
                                     return (
-                                        <div 
+                                        <div
                                             key={optIdx}
                                             onClick={() => !hasSubmitted && handleOptionSelect(i, opt)}
-                                            className={`px-4 py-3.5 rounded-xl border transition-all duration-200 ${
-                                                !hasSubmitted ? 'cursor-pointer' : 'cursor-default'
-                                            } ${optionStyle}`}
+                                            className={`px-4 py-3.5 rounded-xl border transition-all duration-200 ${!hasSubmitted ? 'cursor-pointer' : 'cursor-default'
+                                                } ${optionStyle}`}
                                         >
                                             {opt}
                                         </div>
@@ -212,7 +210,7 @@ const Assessments: React.FC = () => {
                         {!hasSubmitted ? (
                             <>
                                 <span className="text-[#6b6b6b] text-sm hidden md:inline font-medium">Select your answers above.</span>
-                                <button 
+                                <button
                                     onClick={submitQuiz}
                                     disabled={Object.keys(userAnswers).length !== questions.length}
                                     className="bg-[#f5f5f5] hover:bg-[#e0e0e0] text-[#0a0a0a] font-bold px-6 py-2.5 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed ml-auto shadow-sm hover:-translate-y-0.5"
@@ -223,7 +221,7 @@ const Assessments: React.FC = () => {
                         ) : (
                             <>
                                 <span className="font-bold text-[#f5f5f5] text-xl tracking-tight">Score: {getScore()} / {questions.length}</span>
-                                <button 
+                                <button
                                     onClick={handleGenerate}
                                     className="bg-[#1a1a1a] border border-[#3a3a3a] hover:border-[#f5f5f5] hover:text-[#f5f5f5] text-[#e0e0e0] font-bold px-6 py-2.5 rounded-lg transition-all ml-auto"
                                 >

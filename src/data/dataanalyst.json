@@ -1,0 +1,228 @@
+{
+    "title": "Data Analyst ",
+    "main_branches": [
+        {
+            "name": "Introduction",
+            "children": [
+                {
+                    "name": "Key Concepts of Data",
+                    "topics": [
+                        "Collection",
+                        "Cleanup",
+                        "Exploration",
+                        "Visualization",
+                        "Statistical Analysis",
+                        "Machine Learning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Excel Analysis / Reporting",
+            "children": [
+                "IF",
+                "DATEDIF",
+                "VLOOKUP / HLOOKUP",
+                "REPLACE / SUBSTITUTE",
+                "UPPER / LOWER / PROPER",
+                "CONCAT",
+                "TRIM",
+                "AVERAGE",
+                "COUNT",
+                "SUM",
+                "MIN / MAX"
+            ]
+        },
+        {
+            "name": "SQL",
+            "children": [
+                "Learn SQL",
+                "Databases",
+                "CSV Files",
+                "APIs",
+                "Web Scraping"
+            ]
+        },
+        {
+            "name": "Programming",
+            "children": [
+                "Python",
+                "R",
+                {
+                    "name": "Data Manipulation Libraries",
+                    "topics": [
+                        "Pandas",
+                        "Dplyr"
+                    ]
+                },
+                {
+                    "name": "Data Visualization Libraries",
+                    "topics": [
+                        "Matplotlib",
+                        "ggplot2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Data Collection",
+            "children": [
+                "Databases",
+                "CSV Files",
+                "APIs",
+                "Web Scraping"
+            ]
+        },
+        {
+            "name": "Data Cleanup",
+            "children": [
+                "Handling Missing Data",
+                "Removing Duplicates",
+                "Finding Outliers",
+                "Data Transformation",
+                "Using Libraries (Pandas, Dplyr)"
+            ]
+        },
+        {
+            "name": "Descriptive Analysis",
+            "children": [
+                "Generating Statistics",
+                "Visualizing Distributions",
+                {
+                    "name": "Central Tendency",
+                    "topics": [
+                        "Mean",
+                        "Median",
+                        "Mode",
+                        "Average"
+                    ]
+                },
+                {
+                    "name": "Dispersion",
+                    "topics": [
+                        "Range",
+                        "Variance",
+                        "Standard Deviation"
+                    ]
+                },
+                {
+                    "name": "Distribution Shape",
+                    "topics": [
+                        "Skewness",
+                        "Kurtosis"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Statistical Analysis",
+            "children": [
+                "Hypothesis Testing",
+                "Correlation Analysis",
+                "Regression"
+            ]
+        },
+        {
+            "name": "Data Visualization",
+            "children": [
+                {
+                    "name": "Tools",
+                    "topics": [
+                        "Tableau",
+                        "Power BI"
+                    ]
+                },
+                {
+                    "name": "Libraries",
+                    "topics": [
+                        "Matplotlib",
+                        "Seaborn",
+                        "ggplot2"
+                    ]
+                },
+                {
+                    "name": "Chart Types",
+                    "topics": [
+                        "Bar Charts",
+                        "Line Charts",
+                        "Scatter Plot",
+                        "Histograms",
+                        "Heatmap",
+                        "Pie Charts",
+                        "Stacked Charts",
+                        "Funnel Charts"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Machine Learning",
+            "children": [
+                {
+                    "name": "Types",
+                    "topics": [
+                        "Supervised Learning",
+                        "Unsupervised Learning",
+                        "Reinforcement Learning"
+                    ]
+                },
+                {
+                    "name": "Algorithms",
+                    "topics": [
+                        "Decision Trees",
+                        "Naive Bayes",
+                        "KNN",
+                        "K-Means Clustering",
+                        "Logistic Regression"
+                    ]
+                },
+                "Model Evaluation Techniques"
+            ]
+        },
+        {
+            "name": "Deep Learning (Optional)",
+            "children": [
+                {
+                    "name": "Concepts",
+                    "topics": [
+                        "Neural Networks",
+                        "CNNs",
+                        "RNNs"
+                    ]
+                },
+                {
+                    "name": "Frameworks",
+                    "topics": [
+                        "TensorFlow",
+                        "PyTorch"
+                    ]
+                },
+                "Image Recognition",
+                "Natural Language Processing",
+                "Practice Training Models"
+            ]
+        },
+        {
+            "name": "Big Data Technologies",
+            "children": [
+                "Big Data Concepts",
+                "Data Storage Solutions",
+                {
+                    "name": "Processing Frameworks",
+                    "topics": [
+                        "Hadoop",
+                        "Spark"
+                    ]
+                },
+                {
+                    "name": "Processing Techniques",
+                    "topics": [
+                        "Parallel Processing",
+                        "MPI",
+                        "MapReduce"
+                    ]
+                }
+            ]
+        }
+    ]
+}

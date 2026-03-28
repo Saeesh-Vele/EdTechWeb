@@ -1,0 +1,159 @@
+{
+    "title": "AI Engineer",
+    "main_branches": [
+        {
+            "name": "Introduction",
+            "children": [
+                "What is an AI Engineer?",
+                "AI Engineer vs ML Engineer",
+                "AI vs AGI",
+                "LLMs",
+                "Training",
+                "RAG",
+                "Vector Databases",
+                "AI Agents / Prompt Engineering"
+            ]
+        },
+        {
+            "name": "Pre-trained Models",
+            "children": [
+                "Benefits of Pre-trained Models",
+                "Limitations and Considerations",
+                "Context Length",
+                "Cut-off Dates / Knowledge",
+                {
+                    "name": "Popular Models",
+                    "topics": [
+                        "OpenAI Models",
+                        "Anthropic Claude",
+                        "Google Gemini",
+                        "Azure AI",
+                        "AWS SageMaker",
+                        "Hugging Face Models",
+                        "Mistral",
+                        "Cohere"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OpenAI API",
+            "children": [
+                "Chat Completions API",
+                "Writing Prompts",
+                "Token Limits",
+                "Token Counting",
+                "Pricing Considerations",
+                "Managing Tokens"
+            ]
+        },
+        {
+            "name": "AI Safety and Ethics",
+            "children": [
+                "Prompt Injection Attacks",
+                "Security and Privacy Concerns",
+                "Bias and Fairness",
+                "Moderation API",
+                "Robust Prompt Engineering",
+                "Constrained Outputs",
+                "Safety Best Practices"
+            ]
+        },
+        {
+            "name": "Open Source AI",
+            "children": [
+                "Open vs Closed Models",
+                "Hugging Face",
+                "Finding Open Models",
+                "Using Open Source Databases",
+                "Transformers.js"
+            ]
+        },
+        {
+            "name": "Embeddings & Vector Databases",
+            "children": [
+                "What are Embeddings?",
+                {
+                    "name": "Use Cases",
+                    "topics": [
+                        "Semantic Search",
+                        "Classification",
+                        "Recommendation Systems",
+                        "Anomaly Detection"
+                    ]
+                },
+                {
+                    "name": "Vector Databases",
+                    "topics": [
+                        "Pinecone",
+                        "Weaviate",
+                        "FAISS",
+                        "Chroma",
+                        "Qdrant",
+                        "Supabase",
+                        "MongoDB Atlas"
+                    ]
+                },
+                "Indexing Embeddings",
+                "Similarity Search"
+            ]
+        },
+        {
+            "name": "RAG (Retrieval Augmented Generation)",
+            "children": [
+                "Chunking",
+                "Embedding",
+                "Vector Database",
+                "Retrieval",
+                "Generation",
+                {
+                    "name": "Tools",
+                    "topics": [
+                        "LangChain",
+                        "LlamaIndex"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AI Agents",
+            "children": [
+                "Prompt Engineering",
+                "ReAct Prompting",
+                "Agent Use Cases"
+            ]
+        },
+        {
+            "name": "Multimodal AI",
+            "children": [
+                {
+                    "name": "Use Cases",
+                    "topics": [
+                        "Image Understanding",
+                        "Image Generation",
+                        "Video Understanding",
+                        "Audio Processing",
+                        "Text-to-Speech",
+                        "Speech-to-Text"
+                    ]
+                },
+                {
+                    "name": "Tools",
+                    "topics": [
+                        "OpenAI Vision API",
+                        "DALL·E API",
+                        "Whisper API",
+                        "Hugging Face Models"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Development Tools",
+            "children": [
+                "AI Code Editors",
+                "Code Completion Tools"
+            ]
+        }
+    ]
+}

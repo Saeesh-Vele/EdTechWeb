@@ -45,7 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
           <span className="nav-badge">6</span>
         </button>
         <NavLink
-          to="/assessments"
+          to="/dashboard/assessments"
           className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
           onClick={() => setSidebarOpen(false)}
         >

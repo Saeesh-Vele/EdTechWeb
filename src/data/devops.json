@@ -1,0 +1,253 @@
+{
+    "title": "DevOps",
+    "main_branches": [
+        {
+            "name": "Programming Language",
+            "children": [
+                "Python",
+                "Go",
+                "JavaScript / Node.js",
+                "Ruby",
+                "Rust"
+            ]
+        },
+        {
+            "name": "Operating System",
+            "children": [
+                "Windows",
+                {
+                    "name": "Unix / Linux",
+                    "topics": [
+                        "Ubuntu / Debian",
+                        "SUSE Linux",
+                        "RHEL / Derivatives",
+                        "FreeBSD",
+                        "OpenBSD",
+                        "NetBSD"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Terminal Knowledge",
+            "children": [
+                "Bash",
+                "PowerShell",
+                "Vim",
+                "Nano",
+                "Emacs",
+                "Process Monitoring",
+                "Performance Monitoring",
+                "Networking Tools",
+                "Text Manipulation"
+            ]
+        },
+        {
+            "name": "Version Control Systems",
+            "children": [
+                "Git"
+            ]
+        },
+        {
+            "name": "VCS Hosting",
+            "children": [
+                "GitHub",
+                "GitLab",
+                "Bitbucket"
+            ]
+        },
+        {
+            "name": "Containers",
+            "children": [
+                "Docker",
+                "LXC"
+            ]
+        },
+        {
+            "name": "Networking & Protocols",
+            "children": [
+                "HTTP",
+                "HTTPS",
+                "FTP",
+                "SFTP",
+                "SSH",
+                "SSL/TLS",
+                "DNS",
+                "OSI Model",
+                {
+                    "name": "Email Protocols",
+                    "topics": [
+                        "SMTP",
+                        "IMAP",
+                        "POP3",
+                        "DMARC",
+                        "SPF",
+                        "Domain Keys"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Web Servers & Proxies",
+            "children": [
+                "Nginx",
+                "Apache",
+                "Caddy",
+                "Tomcat",
+                "IIS",
+                "Forward Proxy",
+                "Reverse Proxy",
+                "Load Balancer",
+                "Caching Server",
+                "Firewall"
+            ]
+        },
+        {
+            "name": "Cloud Providers",
+            "children": [
+                "AWS",
+                "Azure",
+                "Google Cloud",
+                "DigitalOcean",
+                "Alibaba Cloud",
+                "Hetzner",
+                "Contabo",
+                "Heroku"
+            ]
+        },
+        {
+            "name": "Serverless",
+            "children": [
+                "AWS Lambda",
+                "Cloudflare Workers",
+                "Azure Functions",
+                "Vercel",
+                "GCP Functions"
+            ]
+        },
+        {
+            "name": "Configuration Management",
+            "children": [
+                "Ansible",
+                "Chef",
+                "Puppet"
+            ]
+        },
+        {
+            "name": "CI/CD Tools",
+            "children": [
+                "Jenkins",
+                "GitLab CI",
+                "GitHub Actions",
+                "CircleCI",
+                "TeamCity",
+                "Octopus Deploy"
+            ]
+        },
+        {
+            "name": "Provisioning (IaC)",
+            "children": [
+                "Terraform",
+                "AWS CDK",
+                "CloudFormation",
+                "Pulumi"
+            ]
+        },
+        {
+            "name": "Containers Orchestration",
+            "children": [
+                "Kubernetes",
+                "Docker Swarm",
+                "AWS ECS / Fargate",
+                "GKE",
+                "EKS",
+                "AKS"
+            ]
+        },
+        {
+            "name": "Monitoring & Logging",
+            "children": [
+                {
+                    "name": "Logs Management",
+                    "topics": [
+                        "ELK Stack",
+                        "Grafana Loki",
+                        "Splunk",
+                        "Graylog",
+                        "Papertrail"
+                    ]
+                },
+                {
+                    "name": "Infrastructure Monitoring",
+                    "topics": [
+                        "Prometheus",
+                        "Grafana",
+                        "Zabbix",
+                        "Datadog"
+                    ]
+                },
+                {
+                    "name": "Application Monitoring",
+                    "topics": [
+                        "Jaeger",
+                        "New Relic",
+                        "Datadog",
+                        "Prometheus",
+                        "OpenTelemetry"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Security & Secrets Management",
+            "children": [
+                "Vault",
+                "Sealed Secrets",
+                "SOPS",
+                "Cloud-specific Secret Tools"
+            ]
+        },
+        {
+            "name": "Artifact Management",
+            "children": [
+                "Artifactory",
+                "Nexus",
+                "Cloudsmith"
+            ]
+        },
+        {
+            "name": "GitOps",
+            "children": [
+                "ArgoCD",
+                "FluxCD"
+            ]
+        },
+        {
+            "name": "Service Mesh",
+            "children": [
+                "Istio",
+                "Consul",
+                "Linkerd",
+                "Envoy"
+            ]
+        },
+        {
+            "name": "Messaging Systems",
+            "children": [
+                "Kafka",
+                "RabbitMQ",
+                "SQS",
+                "SNS"
+            ]
+        },
+        {
+            "name": "Cloud Design Patterns",
+            "children": [
+                "Availability",
+                "Data Management",
+                "Design and Implementation",
+                "Management and Monitoring"
+            ]
+        }
+    ]
+}

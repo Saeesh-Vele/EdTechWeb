@@ -26,6 +26,7 @@ import Revision from "./pages/Revision/Revision";
 
 import Layout from "./components/Layout";
 import { ToastContainer } from "./components/Toast/Toast";
+import CareerChatbot from "./components/CareerChatbot/CareerChatbot";
 
 const App: FC = () => {
   const { toasts, showToast } = useToast();
@@ -33,7 +34,6 @@ const App: FC = () => {
   return (
     <>
       <Routes>
-        {/* Default Redirect to Dashboard */}
         <Route path="/" element={<LandingPage showToast={showToast} />} />
 
         <Route path="/auth" element={<AuthPage showToast={showToast} />} />
@@ -57,6 +57,7 @@ const App: FC = () => {
           <Route path="revision" element={<Revision />} />
         </Route>
       </Routes>
+      <CareerChatbot />
       <ToastContainer toasts={toasts} />
     </>
   );

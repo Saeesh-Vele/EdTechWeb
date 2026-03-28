@@ -91,32 +91,21 @@ const HeroCanvas: FC = () => {
         <div className="hero-sticky">
           <canvas id="hero-canvas" ref={canvasRef} />
 
-          {/* TEXT OVERLAY */}
-          <div className="hero-overlay">
-            <h1
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: "clamp(42px,6vw,84px)",
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
-                lineHeight: 1.05,
-                color: "var(--color-white)",
-              }}
-            >
-              Smarter Learning
-            </h1>
+          {/* Hide Veo Watermark */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: 0,
+              right: 0,
+              width: "100%",
+              height: "30px",
+              backgroundColor: "black",
+              zIndex: 10,
+            }}
+          />
 
-            <p
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                color: "var(--color-grey-200)",
-                fontSize: 20,
-                marginTop: 12,
-              }}
-            >
-              Better Outcomes
-            </p>
-          </div>
+          {/* TEXT OVERLAY */}
+
         </div>
       </div>
     </section>

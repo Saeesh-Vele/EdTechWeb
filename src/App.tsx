@@ -21,6 +21,9 @@ import IOSRoadmap from "./pages/DashboardPage/RoadMaps/IosDevloper/IosDevloper";
 import BlockchainRoadmap from "./pages/DashboardPage/RoadMaps/BlockChain/BlockChain";
 import MLOpsRoadmap from "./pages/DashboardPage/RoadMaps/MlOps/MlOps";
 import Assessments from "./pages/Assessments/Assessments";
+
+import Revision from "./pages/Revision/Revision";
+
 import Layout from "./components/Layout";
 import { ToastContainer } from "./components/Toast/Toast";
 
@@ -51,6 +54,7 @@ const App: FC = () => {
           <Route path="roadmap/blockchain" element={<BlockchainRoadmap />} />
           <Route path="roadmap/mlops" element={<MLOpsRoadmap />} />
           <Route path="assessments" element={<Assessments />} />
+          <Route path="revision" element={<Revision />} />
         </Route>
       </Routes>
       <ToastContainer toasts={toasts} />

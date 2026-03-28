@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { loadDomains, type DomainOption } from '../../data/domains';
 import { generateQuestions, type QuizQuestion } from '../../utils/gemini';
 
 const Assessments: React.FC = () => {
+    const navigate = useNavigate();
     const [domains, setDomains] = useState<DomainOption[]>([]);
 
     // Selection state
@@ -74,6 +76,16 @@ const Assessments: React.FC = () => {
             if (userAnswers[i] === q.answer) correct++;
         });
         return correct;
+    };
+
+    const getIncorrectTopics = () => {
+        const topics = new Set<string>();
+        questions.forEach((q, i) => {
+            if (userAnswers[i] !== q.answer) {
+                if (q.topic) topics.add(q.topic);
+            }
+        });
+        return Array.from(topics);
     };
 
     return (
@@ -200,10 +212,31 @@ const Assessments: React.FC = () => {
                     ))}
 
                     {/* Footer Actions / Results */}
-                    {hasSubmitted && (getScore() < questions.length) && (
-                        <div className="bg-[#111111] border border-yellow-900/50 text-yellow-500 p-5 rounded-2xl mt-8 text-center font-medium">
-                            You should revise the prerequisites required for this skill.
-                        </div>
+                    {hasSubmitted && (
+                        getScore() === questions.length ? (
+                            <div className="bg-green-950/30 border border-green-900/50 text-green-400 p-6 rounded-2xl mt-8 flex flex-col items-center gap-2">
+                                <span className="text-2xl">🎉</span>
+                                <span className="font-bold text-lg">Great job!</span>
+                                <span className="text-sm">You answered all questions correctly.</span>
+                            </div>
+                        ) : (
+                            <div className="bg-[#111111] border border-red-900/50 p-6 rounded-2xl mt-8">
+                                <h3 className="text-red-400 font-bold mb-4 text-lg">You should revise the following topics:</h3>
+                                <div className="flex flex-wrap gap-2 mb-6">
+                                    {getIncorrectTopics().map((topic, idx) => (
+                                        <div key={idx} className="bg-red-950/40 border border-red-900/50 text-red-200 px-3 py-1.5 rounded-lg text-sm font-medium">
+                                            {topic}
+                                        </div>
+                                    ))}
+                                </div>
+                                <button 
+                                    onClick={() => navigate('/revision', { state: { topics: getIncorrectTopics() } })}
+                                    className="bg-red-600 hover:bg-red-500 text-white font-bold px-6 py-2.5 rounded-lg transition-all shadow-sm hover:-translate-y-0.5 w-full md:w-auto"
+                                >
+                                    Start Revision
+                                </button>
+                            </div>
+                        )
                     )}
 
                     <div className="bg-[#111111] border border-[#2a2a2a] p-6 rounded-2xl flex items-center justify-between mt-6 shadow-sm">

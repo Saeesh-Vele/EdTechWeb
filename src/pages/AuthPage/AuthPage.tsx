@@ -1,11 +1,11 @@
 import React, { useState, type FC } from "react";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, updateProfile } from "firebase/auth";
 import { auth } from "../../firebase/config";
-import type { Page, AuthTab, ToastType } from "../../types";
+import { useNavigate } from "react-router-dom";
+import type { AuthTab, ToastType } from "../../types";
 import "./AuthPage.css";
 
 interface AuthPageProps {
-  onNavigate: (page: Page) => void;
   showToast: (msg: string, type?: ToastType) => void;
 }
 
@@ -18,7 +18,8 @@ const GoogleIcon: FC = () => (
   </svg>
 );
 
-const AuthPage: FC<AuthPageProps> = ({ onNavigate, showToast }) => {
+const AuthPage: FC<AuthPageProps> = ({ showToast }) => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<AuthTab>("login");
 
   // Login form state
@@ -48,7 +49,7 @@ const AuthPage: FC<AuthPageProps> = ({ onNavigate, showToast }) => {
     try {
       await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
       showToast("Signed in successfully!");
-      setTimeout(() => onNavigate("dashboard"), 800);
+      setTimeout(() => navigate("/dashboard"), 800);
     } catch (error: any) {
       console.error("Login Error:", error);
       showToast(error.message || "Failed to sign in.", "error");
@@ -79,7 +80,7 @@ const AuthPage: FC<AuthPageProps> = ({ onNavigate, showToast }) => {
         await updateProfile(userCredential.user, { displayName: signupName });
       }
       showToast("Account created successfully!");
-      setTimeout(() => onNavigate("dashboard"), 800);
+      setTimeout(() => navigate("/dashboard"), 800);
     } catch (error: any) {
       console.error("Signup Error:", error);
       showToast(error.message || "Failed to create account.", "error");
@@ -94,7 +95,7 @@ const AuthPage: FC<AuthPageProps> = ({ onNavigate, showToast }) => {
     try {
       await signInWithPopup(auth, provider);
       showToast("Signed in with Google!");
-      setTimeout(() => onNavigate("dashboard"), 800);
+      setTimeout(() => navigate("/dashboard"), 800);
     } catch (error: any) {
       console.error("Google Auth Error:", error);
       showToast(error.message || "Google Sign-In failed.", "error");
@@ -110,7 +111,7 @@ const AuthPage: FC<AuthPageProps> = ({ onNavigate, showToast }) => {
         <div className="auth-left__top">
           <button
             className="nav__logo"
-            onClick={() => onNavigate("landing")}
+            onClick={() => navigate("/")}
             style={{ background: "none", border: "none", cursor: "pointer" }}
           >
             <div className="nav__logo-icon"><span>S</span></div>
@@ -147,7 +148,7 @@ const AuthPage: FC<AuthPageProps> = ({ onNavigate, showToast }) => {
       {/* Right panel */}
       <div className="auth-panel--right" style={{ position: "relative" }}>
         <button
-          onClick={() => onNavigate("landing")}
+          onClick={() => navigate("/")}
           style={{
             position: "absolute", top: 24, left: 24,
             fontSize: 13, color: "var(--color-grey-400)",

@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import "./Nav.css";
 
-interface NavProps {
-  onNavigate: (page: string) => void;
-}
-
-const Nav: React.FC<NavProps> = ({ onNavigate }) => {
+const Nav: React.FC = () => {
+  const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -31,7 +29,7 @@ const Nav: React.FC<NavProps> = ({ onNavigate }) => {
         {/* LOGO */}
         <button
           className="navbar-brand"
-          onClick={() => onNavigate("landing")}
+          onClick={() => navigate("/")}
         >
           Smart EdTech
         </button>
@@ -40,14 +38,14 @@ const Nav: React.FC<NavProps> = ({ onNavigate }) => {
         <div className="navbar-right">
           <button
             className="navbar-login-btn desktop-login"
-            onClick={() => onNavigate("auth")}
+            onClick={() => navigate("/auth")}
           >
             Login
           </button>
 
           <button
             className="navbar-cta-btn desktop-login"
-            onClick={() => onNavigate("auth")}
+            onClick={() => navigate("/auth")}
           >
             Get Started
           </button>
@@ -73,7 +71,7 @@ const Nav: React.FC<NavProps> = ({ onNavigate }) => {
             <div className="mobile-menu-header">
               <button
                 className="navbar-brand"
-                onClick={() => onNavigate("landing")}
+                onClick={() => navigate("/")}
               >
                 Smart EdTech
               </button>
@@ -93,14 +91,14 @@ const Nav: React.FC<NavProps> = ({ onNavigate }) => {
 
               <button
                 className="mobile-menu-link"
-                onClick={() => onNavigate("auth")}
+                onClick={() => navigate("/auth")}
               >
                 Login
               </button>
 
               <button
                 className="navbar-cta-btn"
-                onClick={() => onNavigate("auth")}
+                onClick={() => navigate("/auth")}
               >
                 Get Started
               </button>

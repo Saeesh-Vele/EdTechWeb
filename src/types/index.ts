@@ -1,4 +1,3 @@
-export type Page = "landing" | "auth" | "dashboard";
 export type AuthTab = "login" | "signup";
 export type ToastType = "info" | "error";
 

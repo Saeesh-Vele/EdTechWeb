@@ -1,12 +1,12 @@
 import React, { type FC } from "react";
-import type { Page, ToastType } from "../../types";
+import type { ToastType } from "../../types";
+import { useNavigate } from "react-router-dom";
 import Nav from "../../components/Nav/Nav";
 import HeroCanvas from "../../components/HeroCanvas/HeroCanvas";
 import StatItem from "../../components/StatItem/StatItem";
 import "./LandingPage.css";
 
 interface LandingPageProps {
-  onNavigate: (page: Page) => void;
   showToast: (msg: string, type?: ToastType) => void;
 }
 
@@ -26,9 +26,11 @@ const steps = [
   { title: "Improve",            desc: "Use data-driven insights to refine teaching and boost outcomes." },
 ];
 
-const LandingPage: FC<LandingPageProps> = ({ onNavigate }) => (
+const LandingPage: FC<LandingPageProps> = ({ showToast }) => {
+  const navigate = useNavigate();
+  return (
   <div className="landing-page">
-    <Nav onNavigate={onNavigate} />
+    <Nav />
 
     <HeroCanvas />
 
@@ -89,10 +91,10 @@ const LandingPage: FC<LandingPageProps> = ({ onNavigate }) => (
         <h2 className="section-title">Ready to transform learning?</h2>
         <p className="section-desc">Join thousands of students and educators already on the platform.</p>
         <div className="hero__cta" style={{ marginTop: 40 }}>
-          <button className="btn btn-primary" onClick={() => onNavigate("auth")}>
+          <button className="btn btn-primary" onClick={() => navigate("/auth")}>
             Create Free Account
           </button>
-          <button className="btn btn-outline" onClick={() => onNavigate("dashboard")}>
+          <button className="btn btn-outline" onClick={() => navigate("/dashboard")}>
             View Dashboard Demo
           </button>
         </div>
@@ -106,7 +108,7 @@ const LandingPage: FC<LandingPageProps> = ({ onNavigate }) => (
           <div className="footer__brand">
             <button
               className="nav__logo"
-              onClick={() => onNavigate("landing")}
+              onClick={() => navigate("/")}
               style={{ background: "none", border: "none", cursor: "pointer" }}
             >
               <div className="nav__logo-icon"><span>S</span></div>
@@ -119,14 +121,14 @@ const LandingPage: FC<LandingPageProps> = ({ onNavigate }) => (
             <ul>
               <li><a href="#features">Features</a></li>
               <li><a href="#how-it-works">How It Works</a></li>
-              <li><button style={{ background:"none",border:"none",cursor:"pointer",color:"var(--color-grey-200)",fontSize:14,padding:0 }} onClick={() => onNavigate("dashboard")}>Dashboard</button></li>
+              <li><button style={{ background:"none",border:"none",cursor:"pointer",color:"var(--color-grey-200)",fontSize:14,padding:0 }} onClick={() => navigate("/dashboard")}>Dashboard</button></li>
             </ul>
           </div>
           <div className="footer__links-group">
             <h4>Account</h4>
             <ul>
-              <li><button style={{ background:"none",border:"none",cursor:"pointer",color:"var(--color-grey-200)",fontSize:14,padding:0 }} onClick={() => onNavigate("auth")}>Login</button></li>
-              <li><button style={{ background:"none",border:"none",cursor:"pointer",color:"var(--color-grey-200)",fontSize:14,padding:0 }} onClick={() => onNavigate("auth")}>Sign Up</button></li>
+              <li><button style={{ background:"none",border:"none",cursor:"pointer",color:"var(--color-grey-200)",fontSize:14,padding:0 }} onClick={() => navigate("/auth")}>Login</button></li>
+              <li><button style={{ background:"none",border:"none",cursor:"pointer",color:"var(--color-grey-200)",fontSize:14,padding:0 }} onClick={() => navigate("/auth")}>Sign Up</button></li>
             </ul>
           </div>
           <div className="footer__links-group">
@@ -144,6 +146,7 @@ const LandingPage: FC<LandingPageProps> = ({ onNavigate }) => (
       </div>
     </footer>
   </div>
-);
+  );
+};
 
 export default LandingPage;

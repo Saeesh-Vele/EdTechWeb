@@ -1,0 +1,33 @@
+{
+  "domain": "GameDevelopment",
+  "skills": [
+    {
+      "id": "game-physics",
+      "name": "Game Physics",
+      "description": "Physics systems and mechanics",
+      "notes": "Game physics involves the simulation of physical systems in video games, such as rigid body dynamics, collision detection, and fluid mechanics. It creates realistic interactions between game objects.",
+      "videos": [
+        "https://www.youtube.com/embed/Ap4t1E24TII",
+        "https://www.youtube.com/embed/qtzqO4J7T0A"
+      ]
+    },
+    {
+      "id": "linear-algebra",
+      "name": "Linear Algebra",
+      "description": "Math for 3D/2D space manipulation",
+      "notes": "A fundamental branch of mathematics used extensively involving vectors, matrices, and linear transformations to position, move, and rotate objects in 2D and 3D space.",
+      "videos": [
+        "https://www.youtube.com/embed/fNk_zzaMoSs"
+      ]
+    },
+    {
+      "id": "computer-graphics",
+      "name": "Computer Graphics",
+      "description": "Rendering pipelines and shaders",
+      "notes": "Concepts for rendering images, managing the graphics pipeline, dealing with shaders, lighting models, and reflections.",
+      "videos": [
+        "https://www.youtube.com/embed/gpc7u3331oQ"
+      ]
+    }
+  ]
+}

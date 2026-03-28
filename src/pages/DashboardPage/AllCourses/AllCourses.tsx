@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useCourseContext } from "../../../context/CourseContext";
 import "./AllCourses.css";
 
 const routeMap: Record<string, string> = {
@@ -25,6 +26,12 @@ const courses = [
 
 const AllCourses = () => {
     const navigate = useNavigate();
+    const { addCourse, isCourseAdded } = useCourseContext();
+
+    const handleAddCourse = (e: React.MouseEvent, course: string) => {
+        e.stopPropagation(); // Prevents navigating to the roadmap when clicking the Add button
+        addCourse(course);
+    };
 
     return (
         <div className="allcourses-wrapper">
@@ -34,27 +41,41 @@ const AllCourses = () => {
             </div>
 
             <div className="courses-grid">
-                {courses.map((course, index) => (
-                    <div
-                        className="course-card"
-                        key={index}
-                        onClick={() => {
-                            if (routeMap[course]) {
-                                navigate(routeMap[course]);
-                            }
-                        }}
-                    >
-                        <div className="card-content">
-                            <span className="course-name">{course}</span>
+                {courses.map((course, index) => {
+                    const added = isCourseAdded(course);
+                    return (
+                        <div
+                            className="course-card relative"
+                            key={index}
+                            onClick={() => {
+                                if (routeMap[course]) {
+                                    navigate(routeMap[course]);
+                                }
+                            }}
+                        >
+                            <div className="card-content">
+                                <span className="course-name">{course}</span>
+                            </div>
 
+                            <div className="absolute top-4 right-4 z-10">
+                                <button 
+                                    onClick={(e) => handleAddCourse(e, course)}
+                                    disabled={added}
+                                    className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                                        added 
+                                        ? "bg-gray-700 text-gray-400 cursor-not-allowed border border-gray-600" 
+                                        : "bg-indigo-600 hover:bg-indigo-500 text-white shadow-md cursor-pointer"
+                                    }`}
+                                >
+                                    {added ? "Added" : "Add to My Courses"}
+                                </button>
+                            </div>
+
+                            {/* glow effect */}
+                            <div className="card-glow"></div>
                         </div>
-
-
-
-                        {/* glow effect */}
-                        <div className="card-glow"></div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </div>
     );

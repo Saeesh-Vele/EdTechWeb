@@ -1,0 +1,24 @@
+{
+  "domain": "Backend",
+  "skills": [
+    {
+      "id": "relational-databases",
+      "name": "Relational Databases",
+      "description": "Intro to SQL databases",
+      "notes": "Relational databases store data in tables and use SQL for querying. Common examples include PostgreSQL, MySQL, and SQLite. Essential for structured data storage.",
+      "videos": [
+        "https://www.youtube.com/embed/HXV3zeQKqGY"
+      ]
+    },
+    {
+      "id": "apis",
+      "name": "APIs (REST/GraphQL)",
+      "description": "Building and consuming web APIs",
+      "notes": "Application Programming Interfaces allow different software systems to communicate. REST uses standard HTTP methods, while GraphQL allows clients to request exactly the data they need.",
+      "videos": [
+        "https://www.youtube.com/embed/-MTSQjw5DrM",
+        "https://www.youtube.com/embed/eIQh02xuVw4"
+      ]
+    }
+  ]
+}

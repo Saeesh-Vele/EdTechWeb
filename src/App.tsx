@@ -1,3 +1,4 @@
+
 import React, { type FC } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import "./index.css";
@@ -8,6 +9,9 @@ import AuthPage from "./pages/AuthPage/AuthPage";
 import DashboardPage from "./pages/DashboardPage/DashboardPage";
 import DashboardOverview from "./pages/DashboardPage/DashboardOverview/DashboardOverview";
 import AllCourses from "./pages/DashboardPage/AllCourses/AllCourses";
+import MyCoursesList from "./pages/DashboardPage/MyCourses/MyCoursesList";
+import CourseDetail from "./pages/DashboardPage/MyCourses/CourseDetail";
+import SkillDetail from "./pages/DashboardPage/MyCourses/SkillDetail";
 import GameRoadmap from "./pages/DashboardPage/RoadMaps/GameRoadmap/GameRoadmap";
 import BackendRoadmap from "./pages/DashboardPage/RoadMaps/Backend/BackendRoadmap";
 import AndroidRoadmap from "./pages/DashboardPage/RoadMaps/Android/AndroidRoadmap";
@@ -41,6 +45,9 @@ const App: FC = () => {
         <Route path="/dashboard" element={<DashboardPage showToast={showToast} />}>
           <Route index element={<DashboardOverview />} />
           <Route path="allcourses" element={<AllCourses />} />
+          <Route path="my-courses" element={<MyCoursesList />} />
+          <Route path="my-courses/:courseName" element={<CourseDetail />} />
+          <Route path="my-courses/:courseName/:skillName" element={<SkillDetail />} />
           <Route path="roadmap/game" element={<GameRoadmap />} />
           <Route path="roadmap/backend" element={<BackendRoadmap />} />
           <Route path="roadmap/android" element={<AndroidRoadmap />} />

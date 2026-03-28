@@ -38,12 +38,16 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
           onClick={() => setSidebarOpen(false)}
         >
           <span className="nav-icon">📚</span> All Courses
-          <span className="nav-badge">6</span>
         </NavLink>
-        <button className="sidebar__nav-item">
-          <span className="nav-icon">📚</span> My Courses
-          <span className="nav-badge">6</span>
-        </button>
+        
+        <p className="sidebar__section-label" style={{ marginTop: '1rem' }}>My Courses</p>
+        <NavLink
+          to="/dashboard/my-courses"
+          className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
+          onClick={() => setSidebarOpen(false)}
+        >
+          <span className="nav-icon">📘</span> My Courses
+        </NavLink>
         <NavLink
           to="/dashboard/assessments"
           className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}

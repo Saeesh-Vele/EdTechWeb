@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { loadDomains, type DomainOption } from '../../data/domains';
 import { generateQuestions, type QuizQuestion } from '../../utils/gemini';
 import { db, auth } from '../../firebase/config';
-import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import { addDoc, collection, serverTimestamp, setDoc, doc, increment } from 'firebase/firestore';
 import useStudyTracker from '../../hooks/useStudyTracker';
 import { logActivity } from '../../utils/activityLogger';
 
@@ -109,6 +109,37 @@ const Assessments: React.FC = () => {
                     `Completed quiz: ${label} — ${score}/${totalQuestions}`,
                     `quiz::${selectedSkill}::${Date.now()}`
                 );
+
+                // ── Update per-topic performance for Hindsight ──
+                const topicResults: Record<string, { correct: number; wrong: number }> = {};
+                questions.forEach((q, i) => {
+                    const topic = q.topic || selectedSkill || 'General';
+                    if (!topicResults[topic]) {
+                        topicResults[topic] = { correct: 0, wrong: 0 };
+                    }
+                    if (userAnswers[i] === q.answer) {
+                        topicResults[topic].correct++;
+                    } else {
+                        topicResults[topic].wrong++;
+                    }
+                });
+
+                Object.entries(topicResults).forEach(([topic, result]) => {
+                    const topicId = topic.replace(/\s+/g, '-').toLowerCase();
+                    const topicRef = doc(db, 'users', currentUser.uid, 'topicPerformance', topicId);
+                    const totalForTopic = result.correct + result.wrong;
+
+                    setDoc(topicRef, {
+                        topicName: topic,
+                        correct: increment(result.correct),
+                        wrong: increment(result.wrong),
+                        total: increment(totalForTopic),
+                        domain: domainObj?.name || selectedDomain,
+                        lastAttemptAt: serverTimestamp(),
+                    }, { merge: true }).catch(err =>
+                        console.error('Failed to update topic performance:', err)
+                    );
+                });
             }).catch(err => console.error('Failed to save assessment:', err));
         }
     };

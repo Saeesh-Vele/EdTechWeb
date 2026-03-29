@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useRef } from "react";
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useNavigate } from "react-router-dom";
 import type { User } from "firebase/auth";
 import { useCourseContext } from "../../../context/CourseContext";
 import { db } from "../../../firebase/config";
@@ -55,6 +55,36 @@ const DashboardOverview = () => {
   const { user } = useOutletContext<{ user: User | null }>();
   const { myCourses, loadingCourses } = useCourseContext();
   const todayLabel = getTodayLabel();
+  const navigate = useNavigate();
+
+  // ── Hindsight Preview (weak topics) ─────────────────────────────────────
+  const [weakTopicsPreview, setWeakTopicsPreview] = useState<
+    { id: string; topicName: string; accuracy: number }[]
+  >([]);
+
+  useEffect(() => {
+    if (!user) { setWeakTopicsPreview([]); return; }
+    const colRef = collection(db, "users", user.uid, "topicPerformance");
+    const unsub = onSnapshot(
+      colRef,
+      (snap) => {
+        const all = snap.docs.map((d) => {
+          const data = d.data();
+          const correct = typeof data.correct === "number" ? data.correct : 0;
+          const total = typeof data.total === "number" ? data.total : 0;
+          const accuracy = total > 0 ? (correct / total) * 100 : 0;
+          return { id: d.id, topicName: data.topicName || d.id, accuracy };
+        });
+        const weak = all
+          .filter((t) => t.accuracy < 50)
+          .sort((a, b) => a.accuracy - b.accuracy)
+          .slice(0, 3);
+        setWeakTopicsPreview(weak);
+      },
+      (err) => console.error("Hindsight preview error:", err)
+    );
+    return () => unsub();
+  }, [user]);
 
   // ── 1. Recent Activity (real-time) ───────────────────────────────────────
   const [recentActivities, setRecentActivities] = useState<RecentActivity[]>([]);
@@ -412,7 +442,43 @@ const DashboardOverview = () => {
         </div>
       </div>
 
-      {/* ── Syllabus Progress ────────────────────────────────────────────── */}
+      {/* ── Hindsight Insights Preview ──────────────────────────────────── */}
+      <div className="dash-row dash-row--full" style={{ marginTop: 8 }}>
+        <div
+          className="hs-preview"
+          onClick={() => navigate("/dashboard/hindsight")}
+        >
+          <div className="hs-preview__header">
+            <div className="hs-preview__title">
+              <span>🧠</span> Hindsight Insights
+            </div>
+            <span className="hs-preview__action">View all →</span>
+          </div>
+          <div className="hs-preview__body">
+            {weakTopicsPreview.length === 0 ? (
+              <div className="hs-preview__empty">
+                No weak topics detected — looking good! 🎉
+              </div>
+            ) : (
+              <>
+                {weakTopicsPreview.map((t) => (
+                  <div className="hs-preview__item" key={t.id}>
+                    <div className="hs-preview__dot" />
+                    <span className="hs-preview__topic">{t.topicName}</span>
+                    <span className="hs-preview__accuracy">
+                      {Math.round(t.accuracy)}%
+                    </span>
+                  </div>
+                ))}
+                <div className="hs-preview__suggestion">
+                  <span>💡</span>
+                  Focus on "{weakTopicsPreview[0].topicName}" — it needs the most attention.
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
 
     </>
   );

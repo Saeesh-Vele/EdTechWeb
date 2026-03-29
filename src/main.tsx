@@ -6,16 +6,25 @@ import './styles/modules.css'
 import App from './App.tsx'
 import { CourseProvider } from './context/CourseContext'
 import { AuthProvider } from './context/AuthContext'
+import { ErrorBoundary } from './components/ErrorBoundary'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <BrowserRouter>
-      <AuthProvider>
-        <CourseProvider>
-          <App />
-        </CourseProvider>
-      </AuthProvider>
-    </BrowserRouter>
-  </StrictMode>,
-)
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  console.log("Root element found, rendering application...");
+  createRoot(rootElement).render(
+    <StrictMode>
+      <ErrorBoundary>
+        <BrowserRouter>
+          <AuthProvider>
+            <CourseProvider>
+              <App />
+            </CourseProvider>
+          </AuthProvider>
+        </BrowserRouter>
+      </ErrorBoundary>
+    </StrictMode>,
+  )
+} else {
+  console.error("Failed to find the root element");
+}
 

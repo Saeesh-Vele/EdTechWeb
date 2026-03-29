@@ -1,0 +1,82 @@
+/* WRAPPER */
+.roadmap-wrapper {
+    padding: 30px;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #0a0a0a, #000000);
+    color: white;
+}
+
+/* HEADER */
+.roadmap-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* TITLE */
+.roadmap-title {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+/* ADD TO MY COURSES BUTTON */
+.roadmap-add-btn {
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #4f46e5;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.roadmap-add-btn:hover:not(:disabled) {
+    background: #6366f1;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+
+.roadmap-add-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.roadmap-add-btn--added {
+    background: #374151;
+    color: #9ca3af;
+    cursor: not-allowed;
+    border: 1px solid #4b5563;
+    box-shadow: none;
+}
+
+/* IMAGE CONTAINER */
+.roadmap-image-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* IMAGE */
+.roadmap-image {
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 12px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+/* SCROLLBAR (OPTIONAL NICE LOOK) */
+.roadmap-image-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.roadmap-image-container::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}

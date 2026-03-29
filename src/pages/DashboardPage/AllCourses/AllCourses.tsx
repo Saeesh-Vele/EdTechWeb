@@ -57,20 +57,6 @@ const AllCourses = () => {
                                 <span className="course-name">{course}</span>
                             </div>
 
-                            <div className="absolute top-4 right-4 z-10">
-                                <button 
-                                    onClick={(e) => handleAddCourse(e, course)}
-                                    disabled={added}
-                                    className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                                        added 
-                                        ? "bg-gray-700 text-gray-400 cursor-not-allowed border border-gray-600" 
-                                        : "bg-indigo-600 hover:bg-indigo-500 text-white shadow-md cursor-pointer"
-                                    }`}
-                                >
-                                    {added ? "Added" : "Add to My Courses"}
-                                </button>
-                            </div>
-
                             {/* glow effect */}
                             <div className="card-glow"></div>
                         </div>

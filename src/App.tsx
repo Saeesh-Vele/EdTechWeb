@@ -1,9 +1,9 @@
-
 import React, { type FC } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import "./index.css";
 import { useToast } from "./hooks/useToast";
 import { useAuth } from "./context/AuthContext";
+import { useEffect } from "react";
 
 import LandingPage from "./pages/LandingPage/LandingPage";
 import AuthPage from "./pages/AuthPage/AuthPage";
@@ -31,7 +31,12 @@ import Revision from "./pages/Revision/Revision";
 
 import Layout from "./components/Layout";
 import { ToastContainer } from "./components/Toast/Toast";
-import CareerChatbot from "./components/CareerChatbot/CareerChatbot";
+
+declare global {
+  interface Window {
+    voiceflow: any;
+  }
+}
 
 /* ─── Protected Route ─────────────────────────────────────── */
 const ProtectedRoute: FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -43,6 +48,27 @@ const ProtectedRoute: FC<{ children: React.ReactNode }> = ({ children }) => {
 
 const App: FC = () => {
   const { toasts, showToast } = useToast();
+
+  useEffect(() => {
+    // Prevent duplicate script injection
+    if (document.getElementById("voiceflow-chat")) return;
+
+    const script = document.createElement("script");
+    script.id = "voiceflow-chat";
+    script.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+    script.type = "text/javascript";
+    script.async = true;
+
+    script.onload = () => {
+      window.voiceflow.chat.load({
+        verify: { projectID: "69c8b94a02537c88dc024073" }, // extracted from your link
+        url: "https://general-runtime.voiceflow.com",
+        versionID: "production"
+      });
+    };
+
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <>
@@ -80,7 +106,6 @@ const App: FC = () => {
           <Route path="revision" element={<Revision />} />
         </Route>
       </Routes>
-      <CareerChatbot />
       <ToastContainer toasts={toasts} />
     </>
   );

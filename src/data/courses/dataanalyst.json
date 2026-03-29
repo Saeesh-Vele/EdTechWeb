@@ -1,0 +1,95 @@
+{
+    "domain": "DataAnalysis",
+    "skills": [
+        {
+            "id": "data-fundamentals",
+            "name": "Data Fundamentals",
+            "description": "Core concepts of data including collection, cleaning, exploration, and basic analysis techniques.",
+            "notes": "Covers data types, data sources, data quality, and lifecycle. Includes understanding how data is collected, cleaned, explored, and visualized before analysis.",
+            "videos": [
+                "https://www.youtube.com/embed/ua-CiDNNj30"
+            ]
+        },
+        {
+            "id": "excel-analysis",
+            "name": "Excel for Data Analysis",
+            "description": "Using Excel to perform data analysis, reporting, and quick insights through formulas and visual tools.",
+            "notes": "Includes functions like VLOOKUP, IF, SUM, AVERAGE, pivot tables, and charts. Excel is often the first tool for analysts in real-world scenarios.",
+            "videos": [
+                "https://www.youtube.com/embed/8mAITcNt710"
+            ]
+        },
+        {
+            "id": "sql",
+            "name": "SQL & Databases",
+            "description": "Querying and managing data stored in relational databases using Structured Query Language.",
+            "notes": "Learn SELECT queries, joins, aggregations, indexing, and database design. SQL is essential for retrieving and analyzing large datasets.",
+            "videos": [
+                "https://www.youtube.com/embed/HXV3zeQKqGY"
+            ]
+        },
+        {
+            "id": "programming",
+            "name": "Programming (Python/R)",
+            "description": "Using programming languages to manipulate, analyze, and automate data workflows.",
+            "notes": "Focus on Python (Pandas, NumPy) or R (dplyr). Learn data manipulation, scripting, and automation for scalable analysis.",
+            "videos": [
+                "https://www.youtube.com/embed/rfscVS0vtbw"
+            ]
+        },
+        {
+            "id": "data-collection",
+            "name": "Data Collection",
+            "description": "Gathering data from multiple sources such as databases, APIs, files, and web scraping.",
+            "notes": "Includes working with CSV files, REST APIs, and scraping tools. Understanding how to collect reliable data is crucial for analysis.",
+            "videos": [
+                "https://www.youtube.com/embed/XQgXKtPSzUI"
+            ]
+        },
+        {
+            "id": "data-cleaning",
+            "name": "Data Cleaning & Preparation",
+            "description": "Preparing raw data by handling missing values, duplicates, and inconsistencies before analysis.",
+            "notes": "Includes data transformation, normalization, removing outliers, and using libraries like Pandas or dplyr to clean datasets.",
+            "videos": [
+                "https://www.youtube.com/embed/bDhvCp3_lYw"
+            ]
+        },
+        {
+            "id": "data-visualization",
+            "name": "Data Visualization",
+            "description": "Creating charts and visual representations to communicate insights effectively.",
+            "notes": "Tools include Tableau, Power BI, Matplotlib, Seaborn, and ggplot2. Learn when to use bar charts, line graphs, scatter plots, and dashboards.",
+            "videos": [
+                "https://www.youtube.com/embed/_8V5o2UHG0E"
+            ]
+        },
+        {
+            "id": "statistics",
+            "name": "Statistics & Probability",
+            "description": "Mathematical foundation for analyzing data and drawing meaningful conclusions.",
+            "notes": "Includes mean, median, variance, standard deviation, distributions, hypothesis testing, correlation, and regression.",
+            "videos": [
+                "https://www.youtube.com/embed/xxpc-HPKN28"
+            ]
+        },
+        {
+            "id": "machine-learning",
+            "name": "Machine Learning Basics",
+            "description": "Introduction to algorithms that allow systems to learn patterns and make predictions from data.",
+            "notes": "Covers supervised and unsupervised learning, regression, classification, clustering (K-means), and model evaluation techniques.",
+            "videos": [
+                "https://www.youtube.com/embed/GwIo3gDZCVQ"
+            ]
+        },
+        {
+            "id": "big-data",
+            "name": "Big Data Technologies",
+            "description": "Tools and frameworks for processing and analyzing large-scale datasets.",
+            "notes": "Includes Hadoop, Spark, distributed computing, parallel processing, and handling large datasets efficiently.",
+            "videos": [
+                "https://www.youtube.com/embed/4B7h0pG0HnE"
+            ]
+        }
+    ]
+}

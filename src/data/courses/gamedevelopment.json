@@ -4,18 +4,17 @@
     {
       "id": "game-physics",
       "name": "Game Physics",
-      "description": "Physics systems and mechanics",
-      "notes": "Game physics involves the simulation of physical systems in video games, such as rigid body dynamics, collision detection, and fluid mechanics. It creates realistic interactions between game objects.",
+      "description": "Simulation of real-world physical systems including motion, forces, and collisions to create believable interactions between objects in a game environment.",
+      "notes": "Game physics covers rigid body dynamics, collision detection (broad and narrow phase), forces like gravity and friction, constraints, and sometimes soft body or fluid simulation. It ensures objects behave naturally and respond correctly to player actions.",
       "videos": [
-        "https://www.youtube.com/embed/Ap4t1E24TII",
-        "https://www.youtube.com/embed/qtzqO4J7T0A"
+        "https://youtu.be/3lBYVSplAuo?si=r0yDUNimKaQ-DTSk"
       ]
     },
     {
       "id": "linear-algebra",
       "name": "Linear Algebra",
-      "description": "Math for 3D/2D space manipulation",
-      "notes": "A fundamental branch of mathematics used extensively involving vectors, matrices, and linear transformations to position, move, and rotate objects in 2D and 3D space.",
+      "description": "Mathematical foundation for handling vectors, matrices, and transformations used to represent and manipulate objects in 2D and 3D space.",
+      "notes": "Essential for graphics and physics, linear algebra enables operations like translation, rotation, scaling, and projection. Concepts such as dot product, cross product, coordinate systems, and matrix multiplication are heavily used in game engines.",
       "videos": [
         "https://www.youtube.com/embed/fNk_zzaMoSs"
       ]
@@ -23,10 +22,46 @@
     {
       "id": "computer-graphics",
       "name": "Computer Graphics",
-      "description": "Rendering pipelines and shaders",
-      "notes": "Concepts for rendering images, managing the graphics pipeline, dealing with shaders, lighting models, and reflections.",
+      "description": "Techniques and systems used to generate, render, and display visual content in games, including real-time rendering pipelines and shading models.",
+      "notes": "Includes understanding the graphics pipeline, shaders (vertex/fragment), lighting models (Phong, PBR), textures, reflections, shadows, and post-processing effects. It is key to making games visually appealing and performant.",
       "videos": [
         "https://www.youtube.com/embed/gpc7u3331oQ"
+      ]
+    },
+    {
+      "id": "game-engine",
+      "name": "Game Engine",
+      "description": "Software framework that provides core systems and tools for building, managing, and running games efficiently.",
+      "notes": "Game engines like Unity, Unreal Engine, and Godot offer built-in systems for rendering, physics, input handling, scripting, and asset pipelines. Understanding how to use and extend an engine is crucial for rapid development.",
+      "videos": [
+        "https://www.youtube.com/embed/gB1F9G0JXOo"
+      ]
+    },
+    {
+      "id": "programming-languages",
+      "name": "Programming Languages",
+      "description": "Languages used to implement gameplay mechanics, engine systems, and performance-critical features in game development.",
+      "notes": "Common languages include C++ (performance-critical systems), C# (Unity scripting), Python (tools and prototyping), and Rust (safe systems programming). Mastery of programming concepts like OOP, memory management, and data structures is essential.",
+      "videos": [
+        "https://www.youtube.com/embed/zOjov-2OZ0E"
+      ]
+    },
+    {
+      "id": "game-ai",
+      "name": "Game AI",
+      "description": "Systems that control non-player characters (NPCs) and enable intelligent, adaptive behavior in games.",
+      "notes": "Includes techniques like finite state machines, behavior trees, pathfinding (A*), decision-making systems, and machine learning approaches. Game AI focuses on creating believable and fun behaviors rather than perfect intelligence.",
+      "videos": [
+        "https://www.youtube.com/embed/2pWv7GOvuf0"
+      ]
+    },
+    {
+      "id": "advanced-rendering",
+      "name": "Advanced Rendering",
+      "description": "High-end rendering techniques used to achieve realistic lighting, materials, and visual effects in modern games.",
+      "notes": "Covers physically-based rendering (PBR), global illumination, ray tracing, reflections, volumetric effects, and advanced shadowing techniques. These methods push realism but require optimization for real-time performance.",
+      "videos": [
+        "https://www.youtube.com/embed/91hx6P5nC6k"
       ]
     }
   ]

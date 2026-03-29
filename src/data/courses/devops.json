@@ -1,0 +1,122 @@
+{
+    "domain": "DevOps",
+    "skills": [
+        {
+            "id": "programming-language",
+            "name": "Programming Language",
+            "description": "Languages used for scripting, automation, and building DevOps tools and workflows.",
+            "notes": "Common choices include Python, Bash, Go, and JavaScript. Focus on writing automation scripts, working with APIs, and handling system-level operations.",
+            "videos": [
+                "https://www.youtube.com/embed/rfscVS0vtbw"
+            ]
+        },
+        {
+            "id": "operating-systems",
+            "name": "Operating Systems (Linux/Unix)",
+            "description": "Understanding operating systems, especially Linux, which is widely used in servers and cloud environments.",
+            "notes": "Learn file systems, process management, permissions, package managers, and system configuration. Linux is essential for managing servers and containers.",
+            "videos": [
+                "https://www.youtube.com/embed/IVquJh3DXUA"
+            ]
+        },
+        {
+            "id": "terminal-scripting",
+            "name": "Terminal & Scripting",
+            "description": "Command-line skills and scripting for automating tasks and managing systems efficiently.",
+            "notes": "Includes Bash, PowerShell, text processing tools (grep, awk, sed), and automation scripts for deployment and maintenance tasks.",
+            "videos": [
+                "https://www.youtube.com/embed/tK9Oc6AEnR4"
+            ]
+        },
+        {
+            "id": "version-control",
+            "name": "Version Control Systems",
+            "description": "Tools for managing source code, tracking changes, and enabling team collaboration.",
+            "notes": "Git is essential. Learn branching, merging, pull requests, and platforms like GitHub, GitLab, and Bitbucket.",
+            "videos": [
+                "https://www.youtube.com/embed/RGOj5yH7evk"
+            ]
+        },
+        {
+            "id": "networking-protocols",
+            "name": "Networking & Protocols",
+            "description": "Understanding how systems communicate over networks using protocols and infrastructure components.",
+            "notes": "Includes HTTP/HTTPS, DNS, SSH, TCP/IP, OSI model, load balancers, proxies, and firewalls. Crucial for debugging distributed systems.",
+            "videos": [
+                "https://www.youtube.com/embed/qiQR5rTSshw"
+            ]
+        },
+        {
+            "id": "containers",
+            "name": "Containers",
+            "description": "Packaging applications and dependencies into isolated, portable environments.",
+            "notes": "Learn Docker fundamentals, container lifecycle, images, volumes, and networking. Containers ensure consistency across environments.",
+            "videos": [
+                "https://www.youtube.com/embed/3c-iBn73dDE"
+            ]
+        },
+        {
+            "id": "container-orchestration",
+            "name": "Container Orchestration",
+            "description": "Managing, scaling, and deploying containers across clusters of machines.",
+            "notes": "Kubernetes is the industry standard. Learn pods, deployments, services, scaling, and cluster management.",
+            "videos": [
+                "https://www.youtube.com/embed/X48VuDVv0do"
+            ]
+        },
+        {
+            "id": "cloud-providers",
+            "name": "Cloud Providers",
+            "description": "Platforms that provide infrastructure and services for deploying and scaling applications.",
+            "notes": "Includes AWS, Azure, and Google Cloud. Learn compute (EC2), storage (S3), networking, and managed services.",
+            "videos": [
+                "https://www.youtube.com/embed/ulprqHHWlng"
+            ]
+        },
+        {
+            "id": "ci-cd",
+            "name": "CI/CD (Continuous Integration & Deployment)",
+            "description": "Automating the process of building, testing, and deploying applications.",
+            "notes": "Tools like GitHub Actions, Jenkins, and GitLab CI help automate pipelines, improve reliability, and speed up releases.",
+            "videos": [
+                "https://www.youtube.com/embed/scEDHsr3APg"
+            ]
+        },
+        {
+            "id": "configuration-management",
+            "name": "Configuration Management",
+            "description": "Tools and practices for managing system configurations and automating infrastructure setup.",
+            "notes": "Includes Ansible, Chef, and Puppet. Helps ensure consistency and reproducibility across environments.",
+            "videos": [
+                "https://www.youtube.com/embed/1id6ERvfozo"
+            ]
+        },
+        {
+            "id": "infrastructure-as-code",
+            "name": "Infrastructure as Code (IaC)",
+            "description": "Defining and managing infrastructure using code instead of manual processes.",
+            "notes": "Tools like Terraform, CloudFormation, and Pulumi allow versioning and automation of infrastructure provisioning.",
+            "videos": [
+                "https://www.youtube.com/embed/SLB_c_ayRMo"
+            ]
+        },
+        {
+            "id": "monitoring-logging",
+            "name": "Monitoring & Logging",
+            "description": "Tracking system performance, logs, and metrics to ensure reliability and quick issue resolution.",
+            "notes": "Includes Prometheus, Grafana, ELK stack, and Datadog. Learn observability, alerting, and debugging production systems.",
+            "videos": [
+                "https://www.youtube.com/embed/h4Sl21AKiDg"
+            ]
+        },
+        {
+            "id": "security-secrets",
+            "name": "Security & Secrets Management",
+            "description": "Protecting infrastructure, managing secrets, and ensuring secure communication between services.",
+            "notes": "Includes Vault, secret management tools, encryption, IAM, and secure DevOps practices (DevSecOps).",
+            "videos": [
+                "https://www.youtube.com/embed/3Kq1MIfTWCE"
+            ]
+        }
+    ]
+}

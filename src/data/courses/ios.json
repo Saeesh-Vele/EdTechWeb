@@ -1,0 +1,122 @@
+{
+    "domain": "iOSDevelopment",
+    "skills": [
+        {
+            "id": "ios-fundamentals",
+            "name": "iOS Fundamentals",
+            "description": "Understanding the core structure and architecture of iOS, including its main layers and how apps interact with the system.",
+            "notes": "Covers Core OS, Core Services, and Cocoa Touch. Learn how iOS apps are structured and how the system manages resources and app lifecycle.",
+            "videos": [
+                "https://www.youtube.com/embed/09TeUXjzpKs"
+            ]
+        },
+        {
+            "id": "swift-programming",
+            "name": "Swift Programming",
+            "description": "Primary programming language for building iOS applications with modern syntax and safety features.",
+            "notes": "Learn variables, control flow, optionals, structs, classes, protocols, and Swift-specific features like ARC and type safety.",
+            "videos": [
+                "https://www.youtube.com/embed/comQ1-x2a1Q"
+            ]
+        },
+        {
+            "id": "core-programming",
+            "name": "Core Programming Concepts",
+            "description": "Essential programming concepts required for building scalable and maintainable applications.",
+            "notes": "Includes OOP, functional programming, memory management, error handling, and concurrency (GCD, async/await).",
+            "videos": [
+                "https://www.youtube.com/embed/8hly31xKli0"
+            ]
+        },
+        {
+            "id": "xcode",
+            "name": "Xcode & Development Environment",
+            "description": "Using Xcode IDE for building, debugging, and managing iOS applications.",
+            "notes": "Covers project setup, interface builder, debugging tools, breakpoints, simulators, and navigating project files.",
+            "videos": [
+                "https://www.youtube.com/embed/09TeUXjzpKs"
+            ]
+        },
+        {
+            "id": "version-control",
+            "name": "Version Control (Git)",
+            "description": "Managing source code and collaboration using Git and platforms like GitHub.",
+            "notes": "Learn commits, branching, merging, pull requests, and team collaboration workflows.",
+            "videos": [
+                "https://www.youtube.com/embed/RGOj5yH7evk"
+            ]
+        },
+        {
+            "id": "uikit",
+            "name": "UIKit",
+            "description": "Framework for building user interfaces using imperative programming.",
+            "notes": "Includes views, view controllers, storyboards, navigation, transitions, and handling user interactions.",
+            "videos": [
+                "https://www.youtube.com/embed/FcsY1YPBwzQ"
+            ]
+        },
+        {
+            "id": "swiftui",
+            "name": "SwiftUI",
+            "description": "Modern declarative framework for building user interfaces across Apple platforms.",
+            "notes": "Covers views, modifiers, state management, data binding, and building responsive UI with less code.",
+            "videos": [
+                "https://www.youtube.com/embed/F2ojC6TNwws"
+            ]
+        },
+        {
+            "id": "architecture-patterns",
+            "name": "Architectural Patterns",
+            "description": "Design patterns used to structure iOS applications for scalability and maintainability.",
+            "notes": "Includes MVC, MVVM, VIPER, and TCA. Helps separate concerns and improve code organization.",
+            "videos": [
+                "https://www.youtube.com/embed/yZ3P4c0Kx9k"
+            ]
+        },
+        {
+            "id": "data-persistence",
+            "name": "Data Persistence",
+            "description": "Techniques for storing and retrieving data locally on the device.",
+            "notes": "Includes Core Data, UserDefaults, Keychain, file system, and SQLite. Important for offline functionality.",
+            "videos": [
+                "https://www.youtube.com/embed/jBtP0KJ2xYQ"
+            ]
+        },
+        {
+            "id": "networking",
+            "name": "Networking",
+            "description": "Handling communication between the app and external servers or APIs.",
+            "notes": "Covers HTTP/HTTPS, REST APIs, URLSession, JSON parsing, and libraries like Alamofire.",
+            "videos": [
+                "https://www.youtube.com/embed/0H78Nl6X3rM"
+            ]
+        },
+        {
+            "id": "concurrency",
+            "name": "Concurrency & Multithreading",
+            "description": "Managing multiple tasks efficiently to keep apps responsive.",
+            "notes": "Includes Grand Central Dispatch (GCD), async/await, operation queues, and handling background tasks.",
+            "videos": [
+                "https://www.youtube.com/embed/i5F4Jz9w6JY"
+            ]
+        },
+        {
+            "id": "testing-debugging",
+            "name": "Testing & Debugging",
+            "description": "Ensuring app quality through testing and identifying issues during development.",
+            "notes": "Includes unit testing (XCTest), UI testing, debugging tools, performance profiling, and crash analysis.",
+            "videos": [
+                "https://www.youtube.com/embed/8xQkR3nX6vE"
+            ]
+        },
+        {
+            "id": "deployment-devops",
+            "name": "Deployment & DevOps",
+            "description": "Building, distributing, and maintaining iOS applications in production environments.",
+            "notes": "Includes CI/CD (GitHub Actions, Jenkins), TestFlight, App Store submission, and App Store Optimization (ASO).",
+            "videos": [
+                "https://www.youtube.com/embed/9Hh5yB6F2Gk"
+            ]
+        }
+    ]
+}

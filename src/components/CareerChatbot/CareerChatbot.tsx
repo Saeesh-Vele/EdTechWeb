@@ -49,7 +49,7 @@ export default function CareerChatbot() {
       <button
         onClick={() => setOpen(!open)}
         className="fixed bottom-6 right-6 w-14 h-14 rounded-full flex items-center justify-center shadow-xl z-[1000]"
-        style={{ backgroundColor: "oklch(0.637 0.237 275)" }}
+        style={{ backgroundColor: "oklch(0.5 0 0)" }}
       >
         {open ? <X className="text-white" /> : <MessageCircle className="text-white" />}
       </button>
@@ -65,7 +65,7 @@ export default function CareerChatbot() {
           >
             {/* Header */}
             <div className="p-3 text-white flex justify-between items-center"
-              style={{ backgroundColor: "oklch(0.637 0.237 275)" }}>
+              style={{ backgroundColor: "oklch(0.5 0 0)" }}>
               <h2>Smart Assistant</h2>
               <button onClick={() => setOpen(false)}>
                 <X />
@@ -79,7 +79,7 @@ export default function CareerChatbot() {
                   <div className="inline-block p-2 rounded-xl m-1"
                     style={{
                       background: m.role === "user"
-                        ? "oklch(0.637 0.237 275)"
+                        ? "oklch(0.5 0 0)"
                         : "#eee",
                       color: m.role === "user" ? "white" : "black"
                     }}>
@@ -100,7 +100,7 @@ export default function CareerChatbot() {
                 "React prerequisites"
               ].map((q, i) => (
                 <button key={i} onClick={() => sendMessage(q)}
-                  className="text-xs px-2 py-1 rounded bg-purple-500 text-white">
+                  className="text-xs px-2 py-1 rounded bg-gray-500 text-white">
                   {q}
                 </button>
               ))}
@@ -116,7 +116,7 @@ export default function CareerChatbot() {
                 onKeyDown={(e) => e.key === "Enter" && sendMessage()}
               />
               <button onClick={() => sendMessage()}
-                className="px-3 bg-purple-500 text-white">
+                className="px-3 bg-gray-500 text-white">
                 Send
               </button>
             </div>

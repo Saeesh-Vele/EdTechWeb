@@ -1,0 +1,95 @@
+{
+    "domain": "FullStackDevelopment",
+    "skills": [
+        {
+            "id": "html",
+            "name": "HTML",
+            "description": "The foundational markup language used to structure content on the web, defining elements like headings, paragraphs, forms, and media.",
+            "notes": "HTML provides the skeleton of web pages. Learn semantic tags, accessibility (ARIA), forms, inputs, and proper document structure for SEO and maintainability.",
+            "videos": [
+                "https://www.youtube.com/embed/qz0aGYrrlhU"
+            ]
+        },
+        {
+            "id": "css",
+            "name": "CSS",
+            "description": "Styling language used to design and layout web pages, including colors, spacing, responsiveness, and animations.",
+            "notes": "Covers Flexbox, Grid, responsive design, media queries, and modern UI techniques. Also includes frameworks like Tailwind CSS for faster styling workflows.",
+            "videos": [
+                "https://www.youtube.com/embed/1PnVor36_40"
+            ]
+        },
+        {
+            "id": "javascript",
+            "name": "JavaScript",
+            "description": "Core programming language of the web used to add interactivity, handle events, and communicate with servers.",
+            "notes": "Learn DOM manipulation, asynchronous programming (Promises, async/await), event handling, and working with APIs. JavaScript is essential for both frontend and backend (Node.js).",
+            "videos": [
+                "https://www.youtube.com/embed/W6NZfCO5SIk"
+            ]
+        },
+        {
+            "id": "frontend-frameworks",
+            "name": "Frontend Frameworks",
+            "description": "Libraries and frameworks like React that help build dynamic, component-based user interfaces efficiently.",
+            "notes": "Focus on React fundamentals, state management, hooks, routing, and component architecture. Tailwind CSS can be used alongside for styling modern UI quickly.",
+            "videos": [
+                "https://www.youtube.com/embed/bMknfKXIFA8"
+            ]
+        },
+        {
+            "id": "version-control",
+            "name": "Version Control & Collaboration",
+            "description": "Tools and workflows used to manage code changes, collaborate with teams, and maintain project history.",
+            "notes": "Learn Git fundamentals (commit, branch, merge), and platforms like GitHub. Understand pull requests, code reviews, and collaborative workflows.",
+            "videos": [
+                "https://www.youtube.com/embed/RGOj5yH7evk"
+            ]
+        },
+        {
+            "id": "backend-development",
+            "name": "Backend Development (Node.js)",
+            "description": "Server-side development using Node.js to handle business logic, APIs, authentication, and database communication.",
+            "notes": "Learn Express.js, routing, middleware, REST APIs, handling requests/responses, and building scalable backend services.",
+            "videos": [
+                "https://www.youtube.com/embed/Oe421EPjeBE"
+            ]
+        },
+        {
+            "id": "databases",
+            "name": "Databases (SQL & NoSQL)",
+            "description": "Systems used to store, retrieve, and manage application data efficiently.",
+            "notes": "Includes PostgreSQL (relational) and Redis (caching). Learn CRUD operations, indexing, relationships, and performance optimization.",
+            "videos": [
+                "https://www.youtube.com/embed/HXV3zeQKqGY"
+            ]
+        },
+        {
+            "id": "authentication",
+            "name": "Authentication & Authorization",
+            "description": "Mechanisms to verify user identity and control access to resources within an application.",
+            "notes": "Covers JWT authentication, sessions, role-based access, and security best practices for protecting APIs and user data.",
+            "videos": [
+                "https://www.youtube.com/embed/7Q17ubqLfaM"
+            ]
+        },
+        {
+            "id": "devops-cloud",
+            "name": "DevOps & Cloud Services",
+            "description": "Practices and tools for deploying, managing, and scaling applications using cloud platforms and automation.",
+            "notes": "Includes AWS services (EC2, S3, VPC), Linux basics, CI/CD pipelines, and infrastructure tools like Terraform and Ansible.",
+            "videos": [
+                "https://www.youtube.com/embed/0yWAtQ6wYNM"
+            ]
+        },
+        {
+            "id": "deployment-monitoring",
+            "name": "Deployment & Monitoring",
+            "description": "Processes and tools used to deploy applications and monitor their performance in production environments.",
+            "notes": "Covers GitHub Actions for CI/CD, application deployment strategies, logging, monitoring tools, and performance tracking to ensure reliability.",
+            "videos": [
+                "https://www.youtube.com/embed/SCd6fO6uHOk"
+            ]
+        }
+    ]
+}

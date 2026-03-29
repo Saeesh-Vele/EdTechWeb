@@ -1,23 +1,67 @@
 {
-  "domain": "Backend",
+  "domain": "BackendDevelopment",
   "skills": [
     {
-      "id": "relational-databases",
-      "name": "Relational Databases",
-      "description": "Intro to SQL databases",
-      "notes": "Relational databases store data in tables and use SQL for querying. Common examples include PostgreSQL, MySQL, and SQLite. Essential for structured data storage.",
+      "id": "internet",
+      "name": "Internet Fundamentals",
+      "description": "Core concepts of how the internet works, including communication protocols, networking, and web architecture.",
+      "notes": "Covers HTTP/HTTPS, DNS resolution, domain names, hosting, browsers, and how data travels between client and server. Understanding these fundamentals is essential for debugging and designing backend systems.",
       "videos": [
-        "https://www.youtube.com/embed/HXV3zeQKqGY"
+        "https://www.youtube.com/embed/x3c1ih2NJEg"
+      ]
+    },
+    {
+      "id": "programming-language",
+      "name": "Backend Programming Language",
+      "description": "Languages used to build server-side logic, APIs, and scalable backend systems.",
+      "notes": "Popular choices include JavaScript (Node.js), Python, Java, Go, C#, and Rust. Focus on learning syntax, frameworks, concurrency, and memory handling relevant to backend development.",
+      "videos": [
+        "https://www.youtube.com/embed/ENrzD9HAZK4"
+      ]
+    },
+    {
+      "id": "version-control",
+      "name": "Version Control Systems",
+      "description": "Tools for tracking code changes, collaboration, and managing project history.",
+      "notes": "Git is the industry standard, along with platforms like GitHub, GitLab, and Bitbucket. Learn branching strategies, pull requests, merging, and collaborative workflows.",
+      "videos": [
+        "https://www.youtube.com/embed/RGOj5yH7evk"
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "Databases",
+      "description": "Systems for storing, retrieving, and managing structured and unstructured data efficiently.",
+      "notes": "Includes relational databases (PostgreSQL, MySQL) and NoSQL databases (MongoDB, Redis). Learn indexing, transactions, normalization, scaling strategies, and query optimization.",
+      "videos": [
+        "https://www.youtube.com/embed/ztHopE5Wnpc"
       ]
     },
     {
       "id": "apis",
-      "name": "APIs (REST/GraphQL)",
-      "description": "Building and consuming web APIs",
-      "notes": "Application Programming Interfaces allow different software systems to communicate. REST uses standard HTTP methods, while GraphQL allows clients to request exactly the data they need.",
+      "name": "APIs (Application Programming Interfaces)",
+      "description": "Design and implementation of interfaces that allow communication between different software systems.",
+      "notes": "Covers REST, GraphQL, gRPC, and SOAP APIs. Learn request/response cycles, JSON handling, API versioning, documentation (OpenAPI), and best practices for building scalable services.",
       "videos": [
-        "https://www.youtube.com/embed/-MTSQjw5DrM",
-        "https://www.youtube.com/embed/eIQh02xuVw4"
+        "https://www.youtube.com/embed/GZvSYJDk-us"
+      ]
+    },
+    {
+      "id": "authentication-security",
+      "name": "Authentication & Security",
+      "description": "Techniques to secure backend systems, protect data, and manage user identity.",
+      "notes": "Includes JWT, OAuth, sessions, hashing (bcrypt), HTTPS, OWASP principles, and API security. Critical for preventing vulnerabilities like SQL injection, XSS, and CSRF.",
+      "videos": [
+        "https://www.youtube.com/embed/2PPSXonhIck"
+      ]
+    },
+    {
+      "id": "system-design",
+      "name": "System Design & Architecture",
+      "description": "Designing scalable, reliable, and maintainable backend systems and infrastructure.",
+      "notes": "Covers microservices, monoliths, CI/CD, caching, load balancing, message queues (Kafka, RabbitMQ), containerization (Docker, Kubernetes), and observability. Essential for building production-grade systems.",
+      "videos": [
+        "https://www.youtube.com/embed/UzLMhqg3_Wc"
       ]
     }
   ]

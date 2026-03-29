@@ -1,0 +1,122 @@
+{
+    "domain": "MachineLearning",
+    "skills": [
+        {
+            "id": "ml-introduction",
+            "name": "Introduction to Machine Learning",
+            "description": "Overview of machine learning, its applications, and the role of ML engineers.",
+            "notes": "Covers what ML is, types of ML (supervised, unsupervised, reinforcement), and real-world use cases across industries.",
+            "videos": [
+                "https://www.youtube.com/embed/GwIo3gDZCVQ"
+            ]
+        },
+        {
+            "id": "mathematics",
+            "name": "Mathematical Foundations",
+            "description": "Core math concepts required to understand and implement machine learning algorithms.",
+            "notes": "Includes linear algebra (vectors, matrices), calculus (gradients, derivatives), probability, and statistics.",
+            "videos": [
+                "https://www.youtube.com/embed/aircAruvnKk"
+            ]
+        },
+        {
+            "id": "probability-statistics",
+            "name": "Probability & Statistics",
+            "description": "Statistical methods for analyzing data and making predictions.",
+            "notes": "Includes distributions, Bayes theorem, variance, hypothesis testing, and descriptive/inferential statistics.",
+            "videos": [
+                "https://www.youtube.com/embed/xxpc-HPKN28"
+            ]
+        },
+        {
+            "id": "programming",
+            "name": "Programming (Python)",
+            "description": "Using Python for implementing machine learning models and data processing.",
+            "notes": "Covers variables, data structures, loops, functions, and libraries like NumPy, Pandas, and Matplotlib.",
+            "videos": [
+                "https://www.youtube.com/embed/rfscVS0vtbw"
+            ]
+        },
+        {
+            "id": "data-handling",
+            "name": "Data Collection & Cleaning",
+            "description": "Gathering and preparing data for machine learning workflows.",
+            "notes": "Includes data sources (APIs, databases), handling missing values, outliers, and data transformation.",
+            "videos": [
+                "https://www.youtube.com/embed/bDhvCp3_lYw"
+            ]
+        },
+        {
+            "id": "feature-engineering",
+            "name": "Feature Engineering",
+            "description": "Transforming raw data into meaningful features to improve model performance.",
+            "notes": "Includes normalization, encoding, feature selection, dimensionality reduction (PCA).",
+            "videos": [
+                "https://www.youtube.com/embed/0xVqLJe9_CY"
+            ]
+        },
+        {
+            "id": "supervised-learning",
+            "name": "Supervised Learning",
+            "description": "Learning from labeled data to make predictions.",
+            "notes": "Includes classification and regression algorithms such as linear regression, logistic regression, SVM, decision trees, and random forests.",
+            "videos": [
+                "https://www.youtube.com/embed/7eh4d6sabA0"
+            ]
+        },
+        {
+            "id": "unsupervised-learning",
+            "name": "Unsupervised Learning",
+            "description": "Discovering patterns in unlabeled data.",
+            "notes": "Includes clustering (K-means), hierarchical clustering, and dimensionality reduction techniques.",
+            "videos": [
+                "https://www.youtube.com/embed/4b5d3muPQmA"
+            ]
+        },
+        {
+            "id": "model-evaluation",
+            "name": "Model Evaluation",
+            "description": "Assessing model performance and ensuring generalization.",
+            "notes": "Includes metrics like accuracy, precision, recall, F1-score, ROC-AUC, and validation techniques like cross-validation.",
+            "videos": [
+                "https://www.youtube.com/embed/85dtiMz9tSo"
+            ]
+        },
+        {
+            "id": "deep-learning",
+            "name": "Deep Learning",
+            "description": "Advanced machine learning using neural networks with multiple layers.",
+            "notes": "Includes neural networks, backpropagation, activation functions, and frameworks like TensorFlow and PyTorch.",
+            "videos": [
+                "https://www.youtube.com/embed/aircAruvnKk"
+            ]
+        },
+        {
+            "id": "deep-learning-architectures",
+            "name": "Deep Learning Architectures",
+            "description": "Specialized neural network architectures for different types of data.",
+            "notes": "Includes CNNs (computer vision), RNNs (sequential data), transformers, and attention mechanisms.",
+            "videos": [
+                "https://www.youtube.com/embed/kCc8FmEb1nY"
+            ]
+        },
+        {
+            "id": "nlp",
+            "name": "Natural Language Processing (NLP)",
+            "description": "Processing and analyzing text data using machine learning techniques.",
+            "notes": "Includes tokenization, embeddings, transformers, sentiment analysis, and language models.",
+            "videos": [
+                "https://www.youtube.com/embed/fOvTtapxa9c"
+            ]
+        },
+        {
+            "id": "advanced-ml",
+            "name": "Advanced ML & Generative Models",
+            "description": "Advanced topics including generative AI and modern ML techniques.",
+            "notes": "Includes GANs, autoencoders, explainable AI, reinforcement learning, and cutting-edge research trends.",
+            "videos": [
+                "https://www.youtube.com/embed/5sLYAQS9sWQ"
+            ]
+        }
+    ]
+}

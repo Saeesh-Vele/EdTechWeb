@@ -1,0 +1,68 @@
+{
+    "domain": "MLOps",
+    "skills": [
+        {
+            "id": "programming",
+            "name": "Programming Fundamentals",
+            "description": "Core programming skills required for building, automating, and maintaining machine learning systems.",
+            "notes": "Focus on Python as the primary language for ML, along with Bash for scripting and optionally Go for performance tools. Learn data structures, APIs, and automation scripting.",
+            "videos": [
+                "https://www.youtube.com/embed/rfscVS0vtbw"
+            ]
+        },
+        {
+            "id": "version-control",
+            "name": "Version Control Systems",
+            "description": "Tools for tracking code changes and collaborating on machine learning projects.",
+            "notes": "Git and GitHub are essential for managing code, experiment tracking, and collaboration. Learn branching, merging, and maintaining reproducible workflows.",
+            "videos": [
+                "https://www.youtube.com/embed/RGOj5yH7evk"
+            ]
+        },
+        {
+            "id": "cloud-computing",
+            "name": "Cloud Computing",
+            "description": "Using cloud platforms to build, train, and deploy machine learning models at scale.",
+            "notes": "Covers AWS, Azure, and GCP along with their ML services. Learn compute instances, storage, networking, and managed ML services like SageMaker or Vertex AI.",
+            "videos": [
+                "https://www.youtube.com/embed/ulprqHHWlng"
+            ]
+        },
+        {
+            "id": "containerization",
+            "name": "Containerization & Orchestration",
+            "description": "Packaging ML applications into containers and managing them across distributed systems.",
+            "notes": "Includes Docker for containerization and Kubernetes for orchestration. Ensures reproducibility and scalability of ML workloads.",
+            "videos": [
+                "https://www.youtube.com/embed/3c-iBn73dDE"
+            ]
+        },
+        {
+            "id": "machine-learning",
+            "name": "Machine Learning Fundamentals",
+            "description": "Understanding core ML concepts, algorithms, and workflows required before operationalizing models.",
+            "notes": "Covers supervised/unsupervised learning, model training, evaluation, and basic frameworks like scikit-learn, TensorFlow, or PyTorch.",
+            "videos": [
+                "https://www.youtube.com/embed/GwIo3gDZCVQ"
+            ]
+        },
+        {
+            "id": "data-engineering",
+            "name": "Data Engineering Fundamentals",
+            "description": "Building pipelines and systems to collect, process, and prepare data for machine learning.",
+            "notes": "Includes data pipelines, ETL processes, data lakes/warehouses, and tools like Spark, Kafka, and Airflow for scalable data workflows.",
+            "videos": [
+                "https://www.youtube.com/embed/9Hh5yB6F2Gk"
+            ]
+        },
+        {
+            "id": "mlops-practices",
+            "name": "MLOps Practices & Infrastructure",
+            "description": "Practices and tools for deploying, monitoring, and maintaining ML models in production.",
+            "notes": "Covers CI/CD for ML, experiment tracking, model registry, feature stores, monitoring, observability, and Infrastructure as Code (Terraform, etc.).",
+            "videos": [
+                "https://www.youtube.com/embed/06-AZXmwHjo"
+            ]
+        }
+    ]
+}

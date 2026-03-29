@@ -1,0 +1,95 @@
+{
+    "domain": "BlockchainDevelopment",
+    "skills": [
+        {
+            "id": "blockchain-basics",
+            "name": "Blockchain Fundamentals",
+            "description": "Understanding the core concepts of blockchain technology and how decentralized systems work.",
+            "notes": "Covers decentralization, distributed ledgers, blocks, transactions, and why blockchain is important. Also includes basic operations and real-world applications.",
+            "videos": [
+                "https://www.youtube.com/embed/SSo_EIwHSd4"
+            ]
+        },
+        {
+            "id": "cryptography",
+            "name": "Cryptography",
+            "description": "Mathematical techniques used to secure blockchain systems and transactions.",
+            "notes": "Includes hashing (SHA-256), public/private keys, digital signatures, and encryption methods used in blockchain.",
+            "videos": [
+                "https://www.youtube.com/embed/6Gu2QMTAkEU"
+            ]
+        },
+        {
+            "id": "consensus",
+            "name": "Consensus Mechanisms",
+            "description": "Protocols that ensure agreement across decentralized networks.",
+            "notes": "Includes Proof of Work (PoW), Proof of Stake (PoS), Delegated PoS, and other consensus algorithms.",
+            "videos": [
+                "https://www.youtube.com/embed/bBC-nXj3Ng4"
+            ]
+        },
+        {
+            "id": "blockchain-platforms",
+            "name": "Blockchain Platforms",
+            "description": "Different blockchain ecosystems and their architectures.",
+            "notes": "Includes Ethereum, Polygon, Solana, Binance Smart Chain, and Layer 2 solutions like Arbitrum.",
+            "videos": [
+                "https://www.youtube.com/embed/gyMwXuJrbJQ"
+            ]
+        },
+        {
+            "id": "smart-contracts",
+            "name": "Smart Contracts",
+            "description": "Self-executing contracts with logic stored and executed on the blockchain.",
+            "notes": "Includes writing contracts in Solidity, understanding contract lifecycle, and deploying on blockchain networks.",
+            "videos": [
+                "https://www.youtube.com/embed/M576WGiDBdQ"
+            ]
+        },
+        {
+            "id": "web3-development",
+            "name": "Web3 & dApp Development",
+            "description": "Building decentralized applications that interact with blockchain networks.",
+            "notes": "Includes frontend frameworks (React), libraries (web3.js, ethers.js), and connecting wallets like MetaMask.",
+            "videos": [
+                "https://www.youtube.com/embed/gyMwXuJrbJQ"
+            ]
+        },
+        {
+            "id": "oracles",
+            "name": "Oracles",
+            "description": "Systems that provide external data to blockchain smart contracts.",
+            "notes": "Includes Chainlink and oracle networks that connect real-world data with blockchain applications.",
+            "videos": [
+                "https://www.youtube.com/embed/8p9G6C4b5qk"
+            ]
+        },
+        {
+            "id": "security",
+            "name": "Blockchain Security",
+            "description": "Practices to secure smart contracts and blockchain applications.",
+            "notes": "Includes vulnerability analysis, reentrancy attacks, fuzz testing, and tools like Slither and MythX.",
+            "videos": [
+                "https://www.youtube.com/embed/pWGLtjG-F5c"
+            ]
+        },
+        {
+            "id": "storage-scaling",
+            "name": "Storage & Scaling",
+            "description": "Techniques to store data efficiently and scale blockchain systems.",
+            "notes": "Includes decentralized storage (IPFS), Layer 2 solutions, rollups, sidechains, and Ethereum scaling strategies.",
+            "videos": [
+                "https://www.youtube.com/embed/8I3NTE4cn5s"
+            ]
+        },
+        {
+            "id": "devops-deployment",
+            "name": "Development, Testing & Deployment",
+            "description": "Tools and workflows for building, testing, and deploying blockchain applications.",
+            "notes": "Includes frameworks like Hardhat, Truffle, Foundry, unit testing, CI/CD, and monitoring deployed smart contracts.",
+            "videos": [
+                "https://www.youtube.com/embed/gyMwXuJrbJQ"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "domain": "AndroidDevelopment",
+    "skills": [
+        {
+            "id": "programming-language",
+            "name": "Programming Language (Kotlin/Java)",
+            "description": "Core languages used for Android development, with Kotlin being the modern preferred choice.",
+            "notes": "Learn Kotlin fundamentals, OOP concepts, null safety, coroutines, and Java basics if needed. Kotlin is officially recommended by Google.",
+            "videos": [
+                "https://www.youtube.com/embed/F9UC9DY-vIU"
+            ]
+        },
+        {
+            "id": "android-fundamentals",
+            "name": "Android Fundamentals",
+            "description": "Basic concepts required to start building Android apps, including project setup and Gradle.",
+            "notes": "Covers Android Studio setup, Gradle build system, project structure, and creating your first app.",
+            "videos": [
+                "https://www.youtube.com/embed/BBWyXo-3JGQ"
+            ]
+        },
+        {
+            "id": "version-control",
+            "name": "Version Control (Git)",
+            "description": "Managing code changes and collaboration using Git and platforms like GitHub.",
+            "notes": "Learn commits, branching, merging, and collaboration workflows using GitHub, GitLab, or Bitbucket.",
+            "videos": [
+                "https://www.youtube.com/embed/RGOj5yH7evk"
+            ]
+        },
+        {
+            "id": "app-components",
+            "name": "Android App Components",
+            "description": "Core building blocks of Android applications.",
+            "notes": "Includes Activities, Intents, Services, Broadcast Receivers, and Content Providers. Understand lifecycle and communication between components.",
+            "videos": [
+                "https://www.youtube.com/embed/2kH0x1V3vYI"
+            ]
+        },
+        {
+            "id": "ui-development",
+            "name": "UI Development (XML & Jetpack Compose)",
+            "description": "Designing user interfaces using traditional XML layouts and modern Jetpack Compose.",
+            "notes": "Covers layouts (ConstraintLayout), views, fragments, animations, and Compose for declarative UI development.",
+            "videos": [
+                "https://www.youtube.com/embed/lJdXhQjgn6k"
+            ]
+        },
+        {
+            "id": "navigation",
+            "name": "Navigation & User Interaction",
+            "description": "Handling screen transitions and user interactions within the app.",
+            "notes": "Includes Navigation Components, fragments, back stack management, and deep linking.",
+            "videos": [
+                "https://www.youtube.com/embed/4q5QkT9ZlVQ"
+            ]
+        },
+        {
+            "id": "architecture",
+            "name": "Architecture & Design Patterns",
+            "description": "Structuring apps using scalable and maintainable architectural patterns.",
+            "notes": "Includes MVVM, MVI, MVC, repository pattern, and clean architecture principles.",
+            "videos": [
+                "https://www.youtube.com/embed/8YPXv7xKh2w"
+            ]
+        },
+        {
+            "id": "data-storage",
+            "name": "Data Storage & Persistence",
+            "description": "Managing local data storage within Android apps.",
+            "notes": "Includes SharedPreferences, DataStore, Room database, file storage, and caching strategies.",
+            "videos": [
+                "https://www.youtube.com/embed/8YPXv7xKh2w"
+            ]
+        },
+        {
+            "id": "networking",
+            "name": "Networking",
+            "description": "Communicating with external APIs and services.",
+            "notes": "Includes REST APIs, Retrofit, OkHttp, JSON parsing, and GraphQL (Apollo Android).",
+            "videos": [
+                "https://www.youtube.com/embed/4q5QkT9ZlVQ"
+            ]
+        },
+        {
+            "id": "async-testing-deployment",
+            "name": "Asynchronism, Testing & Deployment",
+            "description": "Handling background tasks, testing apps, and distributing them to users.",
+            "notes": "Includes coroutines, RxJava, WorkManager, unit/UI testing (JUnit, Espresso), debugging tools, and publishing apps via Google Play Store.",
+            "videos": [
+                "https://www.youtube.com/embed/6Wb6bC7V4cM"
+            ]
+        }
+    ]
+}

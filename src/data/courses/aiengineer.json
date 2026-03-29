@@ -1,0 +1,95 @@
+{
+    "domain": "AIEngineering",
+    "skills": [
+        {
+            "id": "ai-fundamentals",
+            "name": "AI Fundamentals",
+            "description": "Core concepts of artificial intelligence, including differences between AI, ML, AGI, and modern AI systems like LLMs.",
+            "notes": "Covers what AI engineers do, how AI systems are built, and key concepts like training, inference, and evaluation. Also introduces LLMs and modern AI ecosystems.",
+            "videos": [
+                "https://www.youtube.com/embed/2ePf9rue1Ao"
+            ]
+        },
+        {
+            "id": "pretrained-models",
+            "name": "Pre-trained Models",
+            "description": "Using existing AI models to build applications without training from scratch.",
+            "notes": "Includes understanding model capabilities, context length, limitations, and providers like OpenAI, Anthropic, Google, and Hugging Face.",
+            "videos": [
+                "https://www.youtube.com/embed/5sLYAQS9sWQ"
+            ]
+        },
+        {
+            "id": "openai-api",
+            "name": "AI APIs & OpenAI Platform",
+            "description": "Working with APIs to integrate AI models into applications.",
+            "notes": "Covers chat/completions APIs, token management, pricing, prompt structuring, and handling responses in production systems.",
+            "videos": [
+                "https://www.youtube.com/embed/8uR1tJ5zG0g"
+            ]
+        },
+        {
+            "id": "prompt-engineering",
+            "name": "Prompt Engineering",
+            "description": "Designing effective prompts to guide AI models toward accurate and useful outputs.",
+            "notes": "Includes prompt patterns, few-shot learning, chain-of-thought, prompt optimization, and avoiding hallucinations.",
+            "videos": [
+                "https://www.youtube.com/embed/jC4v5AS4RIM"
+            ]
+        },
+        {
+            "id": "embeddings",
+            "name": "Embeddings & Vector Databases",
+            "description": "Representing text and data as vectors for semantic search and similarity-based tasks.",
+            "notes": "Covers embeddings, cosine similarity, vector databases (Pinecone, FAISS), and use cases like search, recommendation, and clustering.",
+            "videos": [
+                "https://www.youtube.com/embed/8rXD5-xhemo"
+            ]
+        },
+        {
+            "id": "rag",
+            "name": "RAG (Retrieval-Augmented Generation)",
+            "description": "Combining LLMs with external data sources to improve accuracy and reduce hallucinations.",
+            "notes": "Includes chunking, embedding pipelines, retrieval mechanisms, and generation steps. Also covers frameworks like LangChain and LlamaIndex.",
+            "videos": [
+                "https://www.youtube.com/embed/T-D1OfcDW1M"
+            ]
+        },
+        {
+            "id": "ai-agents",
+            "name": "AI Agents",
+            "description": "Systems that use LLMs to perform tasks autonomously by interacting with tools and environments.",
+            "notes": "Includes agent architectures, tool usage, ReAct prompting, planning, and real-world use cases like automation and assistants.",
+            "videos": [
+                "https://www.youtube.com/embed/X6tP6h3FZ9Y"
+            ]
+        },
+        {
+            "id": "ai-safety",
+            "name": "AI Safety & Ethics",
+            "description": "Ensuring AI systems are safe, fair, and aligned with user and societal expectations.",
+            "notes": "Covers bias, hallucinations, prompt injection attacks, privacy concerns, and best practices for building responsible AI systems.",
+            "videos": [
+                "https://www.youtube.com/embed/7qF0G7ZrV5c"
+            ]
+        },
+        {
+            "id": "open-source-ai",
+            "name": "Open Source AI Ecosystem",
+            "description": "Working with open-source models and tools for building customizable AI solutions.",
+            "notes": "Includes Hugging Face models, Ollama, open-source LLMs, and running models locally or on custom infrastructure.",
+            "videos": [
+                "https://www.youtube.com/embed/6s7u3n7cF0I"
+            ]
+        },
+        {
+            "id": "multimodal-ai",
+            "name": "Multimodal AI & Applications",
+            "description": "Building AI systems that handle multiple data types such as text, images, audio, and video.",
+            "notes": "Includes image generation, speech-to-text, text-to-speech, vision models, and multimodal APIs like Whisper and DALL·E.",
+            "videos": [
+                "https://www.youtube.com/embed/9Hh5yB6F2Gk"
+            ]
+        }
+    ]
+}

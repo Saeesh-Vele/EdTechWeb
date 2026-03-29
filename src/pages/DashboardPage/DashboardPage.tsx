@@ -1,5 +1,17 @@
 import React, { useState, type FC } from "react";
 import { Outlet, useNavigate, NavLink } from "react-router-dom";
+import {
+  FiHome,
+  FiLayers,
+  FiBookOpen,
+  FiCheckSquare,
+  FiTrendingUp,
+  FiSettings,
+  FiLogOut,
+  FiBell,
+  FiSearch,
+  FiMenu,
+} from "react-icons/fi";
 import type { ToastType } from "../../types";
 import "./DashboardPage.css";
 
@@ -34,14 +46,14 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
             className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
             onClick={() => setSidebarOpen(false)}
           >
-            <span className="nav-icon">📊</span> Overview
+            <span className="nav-icon"><FiHome /></span> Overview
           </NavLink>
           <NavLink
             to="/dashboard/allcourses"
             className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
             onClick={() => setSidebarOpen(false)}
           >
-            <span className="nav-icon">📚</span> All Courses
+            <span className="nav-icon"><FiLayers /></span> All Courses
           </NavLink>
 
           <p className="sidebar__section-label mt-4">My Courses</p>
@@ -50,28 +62,28 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
             className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
             onClick={() => setSidebarOpen(false)}
           >
-            <span className="nav-icon">📘</span> My Courses
+            <span className="nav-icon"><FiBookOpen /></span> My Courses
           </NavLink>
           <NavLink
             to="/dashboard/assessments"
             className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
             onClick={() => setSidebarOpen(false)}
           >
-            <span className="nav-icon">✅</span> Assessments
+            <span className="nav-icon"><FiCheckSquare /></span> Assessments
           </NavLink>
           <button className="sidebar__nav-item">
-            <span className="nav-icon">📈</span> Progress
+            <span className="nav-icon"><FiTrendingUp /></span> Progress
           </button>
 
           <p className="sidebar__section-label">System</p>
           <button className="sidebar__nav-item">
-            <span className="nav-icon">⚙️</span> Settings
+            <span className="nav-icon"><FiSettings /></span> Settings
           </button>
         </nav>
 
         <div className="sidebar__footer">
           <button className="sidebar__nav-item" onClick={() => navigate("/auth")}>
-            <span className="nav-icon">📁</span> Logout
+            <span className="nav-icon"><FiLogOut /></span> Logout
           </button>
           <div className="sidebar__user">
             <div className="user-avatar">R</div>
@@ -91,19 +103,19 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
               className="sidebar-toggle"
               onClick={() => setSidebarOpen((o) => !o)}
             >
-              ☰
+              <FiMenu />
             </button>
             <h2 className="dash-topbar__title">Overview</h2>
           </div>
 
           <div className="dash-topbar__search">
-            <span className="dash-topbar__search-icon">🔍</span>
+            <span className="dash-topbar__search-icon"><FiSearch /></span>
             <input type="text" placeholder="Search courses, students..." />
           </div>
 
           <div className="dash-topbar__actions">
             <button className="icon-btn">
-              🔔 <span className="badge">2</span>
+              <FiBell /> <span className="badge">2</span>
             </button>
             <div className="user-avatar" style={{ width: 32, height: 32 }}><span>R</span></div>
           </div>

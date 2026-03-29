@@ -58,7 +58,7 @@ const SkillDetail = () => {
         <p className="text-gray-400 mb-6">Could not find the requested skill.</p>
         <button 
           onClick={() => navigate(`/dashboard/my-courses/${courseName}`)}
-          className="px-6 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-white font-medium transition-colors"
+          className="px-6 py-2 bg-white hover:bg-gray-200 rounded-lg text-black font-medium transition-colors"
         >
           Back to Course
         </button>
@@ -77,7 +77,7 @@ const SkillDetail = () => {
     <div className="p-8 max-w-5xl mx-auto">
       <button 
         onClick={() => navigate(`/dashboard/my-courses/${courseName}`)}
-        className="mb-8 px-4 py-2 border border-gray-700 bg-[#111827] text-gray-300 hover:text-white hover:border-gray-500 hover:bg-gray-800 rounded-lg text-sm flex items-center gap-2 transition-all"
+        className="mb-8 px-4 py-2 border border-gray-700 bg-[#141414] text-gray-300 hover:text-white hover:border-gray-500 hover:bg-gray-800 rounded-lg text-sm flex items-center gap-2 transition-all"
       >
         ← Back to Course
       </button>
@@ -88,41 +88,37 @@ const SkillDetail = () => {
       </div>
 
       <div className="space-y-8">
+        {/* Video Section — Primary Player */}
+        {skill.videos && skill.videos.length > 0 && (
+          <div className="video-section">
+            {skill.videos.map((video, index) => (
+              <div key={index} className="video-block">
+                <div className="video-player">
+                  <iframe
+                    src={getYouTubeEmbedUrl(video)}
+                    title={`Video Reference ${index + 1}`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                {skill.videos.length > 1 && (
+                  <p className="video-label">Part {index + 1}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
         {/* Notes Section */}
-        <div className="bg-[#111827] border border-gray-800 rounded-xl p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-white mb-5 flex items-center gap-2">
-            <span>📝</span> Study Notes
+        <div className="notes-section">
+          <h2 className="notes-section__title">
+            📝 Study Notes
           </h2>
-          <div className="text-gray-300 leading-relaxed whitespace-pre-wrap text-[15px]">
+          <div className="notes-section__body">
             {skill.notes}
           </div>
         </div>
-
-        {/* Videos Section */}
-        {skill.videos && skill.videos.length > 0 && (
-          <div className="bg-[#111827] border border-gray-800 rounded-xl p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-white mb-5 flex items-center gap-2">
-              <span>📺</span> Recommended Videos
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {skill.videos.map((video, index) => (
-                <div key={index} className="flex flex-col gap-3">
-                  <div className="aspect-video w-full rounded-lg overflow-hidden border border-gray-800 shadow-md bg-black">
-                    <iframe
-                      className="w-full h-full"
-                      src={getYouTubeEmbedUrl(video)}
-                      title={`Video Reference ${index + 1}`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                  <p className="text-sm text-gray-400 text-center font-medium">Part {index + 1}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

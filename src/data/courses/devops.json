@@ -52,7 +52,7 @@
             "description": "Packaging applications and dependencies into isolated, portable environments.",
             "notes": "Learn Docker fundamentals, container lifecycle, images, volumes, and networking. Containers ensure consistency across environments.",
             "videos": [
-                "https://www.youtube.com/embed/3c-iBn73dDE"
+                "http://youtube.com/watch?v=Vr_fCxXcSu4"
             ]
         },
         {
@@ -70,7 +70,7 @@
             "description": "Platforms that provide infrastructure and services for deploying and scaling applications.",
             "notes": "Includes AWS, Azure, and Google Cloud. Learn compute (EC2), storage (S3), networking, and managed services.",
             "videos": [
-                "https://www.youtube.com/embed/ulprqHHWlng"
+                "https://www.youtube.com/watch?v=N0SYCyS2xZA"
             ]
         },
         {

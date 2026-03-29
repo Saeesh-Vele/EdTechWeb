@@ -3,7 +3,7 @@
     "skills": [
         {
             "id": "data-engineering-fundamentals",
-            "name": "Data Engineering Fundamentals",
+            "name": "1. Data Engineering Fundamentals",
             "description": "Introduction to data engineering concepts, roles, and the lifecycle of data systems.",
             "notes": "Covers what data engineers do, differences from data scientists, and the full data lifecycle including generation, ingestion, storage, and serving.",
             "videos": [
@@ -12,7 +12,7 @@
         },
         {
             "id": "programming-skills",
-            "name": "Programming & System Fundamentals",
+            "name": "2. Programming & System Fundamentals",
             "description": "Core programming and system knowledge required to build scalable data systems.",
             "notes": "Includes Python, Java, or Scala, along with data structures, algorithms, Linux basics, networking, and distributed systems fundamentals.",
             "videos": [
@@ -21,7 +21,7 @@
         },
         {
             "id": "databases",
-            "name": "Databases (SQL & NoSQL)",
+            "name": "3. Databases (SQL & NoSQL)",
             "description": "Understanding how to store, query, and manage structured and unstructured data.",
             "notes": "Includes relational databases (PostgreSQL, MySQL) and NoSQL systems (MongoDB, Cassandra, DynamoDB). Learn indexing, normalization, and query optimization.",
             "videos": [
@@ -30,7 +30,7 @@
         },
         {
             "id": "data-warehousing",
-            "name": "Data Warehousing",
+            "name": "4. Data Warehousing",
             "description": "Designing and managing systems for analytical data storage and reporting.",
             "notes": "Includes tools like Snowflake, BigQuery, and Redshift. Learn star/snowflake schemas, OLAP systems, and data marts.",
             "videos": [
@@ -39,56 +39,56 @@
         },
         {
             "id": "data-ingestion",
-            "name": "Data Ingestion",
+            "name": "5. Data Ingestion",
             "description": "Collecting and importing data from various sources into storage systems.",
             "notes": "Includes batch and real-time ingestion, APIs, logs, IoT data, and tools like Kafka and Flume.",
             "videos": [
-                "https://www.youtube.com/embed/1lRrZr7Yg8k"
+                "https://www.youtube.com/watch?v=11lQbLQhIrM"
             ]
         },
         {
             "id": "data-pipelines",
-            "name": "Data Pipelines (ETL/ELT)",
+            "name": "6. Data Pipelines (ETL/ELT)",
             "description": "Designing workflows to process, transform, and move data efficiently.",
             "notes": "Includes ETL/ELT processes, workflow orchestration tools like Apache Airflow, dbt, and Prefect.",
             "videos": [
-                "https://www.youtube.com/embed/mtFQKxX9n3I"
+                "https://www.youtube.com/watch?v=_Nk0v9qUWk4"
             ]
         },
         {
             "id": "big-data",
-            "name": "Big Data Technologies",
+            "name": "7. Big Data Technologies",
             "description": "Tools and frameworks for processing large-scale distributed data.",
             "notes": "Includes Apache Spark, Hadoop ecosystem (HDFS, YARN), and distributed computing concepts.",
             "videos": [
-                "https://www.youtube.com/embed/4B7h0pG0HnE"
+                "https://www.youtube.com/watch?v=Pyo4RWtxsQM"
             ]
         },
         {
             "id": "cloud-containers",
-            "name": "Cloud Computing & Containers",
+            "name": "8. Cloud Computing & Containers",
             "description": "Deploying and managing data systems on cloud infrastructure with containerization.",
             "notes": "Includes AWS, GCP, Azure, Docker, Kubernetes, and managed data services.",
             "videos": [
-                "https://www.youtube.com/embed/ulprqHHWlng"
+                "https://www.youtube.com/watch?v=0qotVMX-J5s"
             ]
         },
         {
             "id": "data-serving",
-            "name": "Data Serving & Messaging",
+            "name": "9. Data Serving & Messaging",
             "description": "Delivering processed data to applications and handling real-time data streams.",
             "notes": "Includes APIs, dashboards, reverse ETL, and messaging systems like Kafka, RabbitMQ, SQS.",
             "videos": [
-                "https://www.youtube.com/embed/gg-VU9T9J6M"
+                "https://www.youtube.com/watch?v=oUJbuFMyBDk"
             ]
         },
         {
             "id": "governance-security",
-            "name": "Data Governance, Security & Privacy",
+            "name": "10. Data Governance, Security & Privacy",
             "description": "Ensuring data quality, security, compliance, and proper usage across systems.",
             "notes": "Includes data lineage, data quality checks, GDPR compliance, access control, and privacy best practices.",
             "videos": [
-                "https://www.youtube.com/embed/8WZK4h5o1F8"
+                "https://www.youtube.com/watch?v=uPsUjKLHLAg"
             ]
         }
     ]

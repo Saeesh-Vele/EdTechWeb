@@ -70,7 +70,7 @@
             "description": "Design patterns used to structure iOS applications for scalability and maintainability.",
             "notes": "Includes MVC, MVVM, VIPER, and TCA. Helps separate concerns and improve code organization.",
             "videos": [
-                "https://www.youtube.com/embed/yZ3P4c0Kx9k"
+                "https://www.youtube.com/watch?v=f6zXyq4VPP8"
             ]
         },
         {
@@ -79,7 +79,7 @@
             "description": "Techniques for storing and retrieving data locally on the device.",
             "notes": "Includes Core Data, UserDefaults, Keychain, file system, and SQLite. Important for offline functionality.",
             "videos": [
-                "https://www.youtube.com/embed/jBtP0KJ2xYQ"
+                "https://www.youtube.com/watch?v=T0yzrZL1py0"
             ]
         },
         {
@@ -88,7 +88,7 @@
             "description": "Handling communication between the app and external servers or APIs.",
             "notes": "Covers HTTP/HTTPS, REST APIs, URLSession, JSON parsing, and libraries like Alamofire.",
             "videos": [
-                "https://www.youtube.com/embed/0H78Nl6X3rM"
+                "https://www.youtube.com/watch?v=IPvYjXCsTg8"
             ]
         },
         {
@@ -97,7 +97,7 @@
             "description": "Managing multiple tasks efficiently to keep apps responsive.",
             "notes": "Includes Grand Central Dispatch (GCD), async/await, operation queues, and handling background tasks.",
             "videos": [
-                "https://www.youtube.com/embed/i5F4Jz9w6JY"
+                "https://www.youtube.com/watch?v=WldMTtUWqTg"
             ]
         },
         {
@@ -106,7 +106,7 @@
             "description": "Ensuring app quality through testing and identifying issues during development.",
             "notes": "Includes unit testing (XCTest), UI testing, debugging tools, performance profiling, and crash analysis.",
             "videos": [
-                "https://www.youtube.com/embed/8xQkR3nX6vE"
+                "https://www.youtube.com/watch?v=9H6muyZjms0"
             ]
         },
         {
@@ -115,7 +115,7 @@
             "description": "Building, distributing, and maintaining iOS applications in production environments.",
             "notes": "Includes CI/CD (GitHub Actions, Jenkins), TestFlight, App Store submission, and App Store Optimization (ASO).",
             "videos": [
-                "https://www.youtube.com/embed/9Hh5yB6F2Gk"
+                "https://www.youtube.com/watch?v=h7LDnVsNRVI"
             ]
         }
     ]

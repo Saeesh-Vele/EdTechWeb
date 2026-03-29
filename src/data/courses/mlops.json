@@ -25,7 +25,7 @@
             "description": "Using cloud platforms to build, train, and deploy machine learning models at scale.",
             "notes": "Covers AWS, Azure, and GCP along with their ML services. Learn compute instances, storage, networking, and managed ML services like SageMaker or Vertex AI.",
             "videos": [
-                "https://www.youtube.com/embed/ulprqHHWlng"
+                "https://www.youtube.com/watch?v=8C_kHJ5YEiA"
             ]
         },
         {
@@ -52,7 +52,7 @@
             "description": "Building pipelines and systems to collect, process, and prepare data for machine learning.",
             "notes": "Includes data pipelines, ETL processes, data lakes/warehouses, and tools like Spark, Kafka, and Airflow for scalable data workflows.",
             "videos": [
-                "https://www.youtube.com/embed/9Hh5yB6F2Gk"
+                "https://www.youtube.com/watch?v=hf2go3E2m8g"
             ]
         },
         {

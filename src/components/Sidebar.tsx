@@ -1,5 +1,14 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import {
+  FiHome,
+  FiLayers,
+  FiBookOpen,
+  FiCheckSquare,
+  FiTrendingUp,
+  FiSettings,
+  FiLogOut,
+} from "react-icons/fi";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -30,14 +39,14 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
           className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
           onClick={() => setSidebarOpen(false)}
         >
-          <span className="nav-icon">📊</span> Overview
+          <span className="nav-icon"><FiHome /></span> Overview
         </NavLink>
         <NavLink
           to="/dashboard/allcourses"
           className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
           onClick={() => setSidebarOpen(false)}
         >
-          <span className="nav-icon">📚</span> All Courses
+          <span className="nav-icon"><FiLayers /></span> All Courses
         </NavLink>
         
         <p className="sidebar__section-label" style={{ marginTop: '1rem' }}>My Courses</p>
@@ -46,28 +55,28 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
           className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
           onClick={() => setSidebarOpen(false)}
         >
-          <span className="nav-icon">📘</span> My Courses
+          <span className="nav-icon"><FiBookOpen /></span> My Courses
         </NavLink>
         <NavLink
           to="/dashboard/assessments"
           className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
           onClick={() => setSidebarOpen(false)}
         >
-          <span className="nav-icon">✅</span> Assessments
+          <span className="nav-icon"><FiCheckSquare /></span> Assessments
         </NavLink>
         <button className="sidebar__nav-item">
-          <span className="nav-icon">📈</span> Progress
+          <span className="nav-icon"><FiTrendingUp /></span> Progress
         </button>
 
         <p className="sidebar__section-label">System</p>
         <button className="sidebar__nav-item">
-          <span className="nav-icon">⚙️</span> Settings
+          <span className="nav-icon"><FiSettings /></span> Settings
         </button>
       </nav>
 
       <div className="sidebar__footer">
         <button className="sidebar__nav-item" onClick={() => navigate("/auth")}>
-          <span className="nav-icon">📁</span> Logout
+          <span className="nav-icon"><FiLogOut /></span> Logout
         </button>
         <div className="sidebar__user">
           <div className="user-avatar">R</div>

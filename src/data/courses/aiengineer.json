@@ -25,7 +25,7 @@
             "description": "Working with APIs to integrate AI models into applications.",
             "notes": "Covers chat/completions APIs, token management, pricing, prompt structuring, and handling responses in production systems.",
             "videos": [
-                "https://www.youtube.com/embed/8uR1tJ5zG0g"
+                "https://www.youtube.com/watch?v=hcyOajJfSLs"
             ]
         },
         {
@@ -43,7 +43,7 @@
             "description": "Representing text and data as vectors for semantic search and similarity-based tasks.",
             "notes": "Covers embeddings, cosine similarity, vector databases (Pinecone, FAISS), and use cases like search, recommendation, and clustering.",
             "videos": [
-                "https://www.youtube.com/embed/8rXD5-xhemo"
+                "https://www.youtube.com/watch?v=dN0lsF2cvm4"
             ]
         },
         {
@@ -70,7 +70,7 @@
             "description": "Ensuring AI systems are safe, fair, and aligned with user and societal expectations.",
             "notes": "Covers bias, hallucinations, prompt injection attacks, privacy concerns, and best practices for building responsible AI systems.",
             "videos": [
-                "https://www.youtube.com/embed/7qF0G7ZrV5c"
+                "https://www.youtube.com/watch?v=aGwYtUzMQUk"
             ]
         },
         {
@@ -79,7 +79,7 @@
             "description": "Working with open-source models and tools for building customizable AI solutions.",
             "notes": "Includes Hugging Face models, Ollama, open-source LLMs, and running models locally or on custom infrastructure.",
             "videos": [
-                "https://www.youtube.com/embed/6s7u3n7cF0I"
+                "https://www.youtube.com/watch?v=hFURlsMwU7c"
             ]
         },
         {
@@ -88,7 +88,7 @@
             "description": "Building AI systems that handle multiple data types such as text, images, audio, and video.",
             "notes": "Includes image generation, speech-to-text, text-to-speech, vision models, and multimodal APIs like Whisper and DALL·E.",
             "videos": [
-                "https://www.youtube.com/embed/9Hh5yB6F2Gk"
+                "https://www.youtube.com/watch?v=WkoytlA3MoQ"
             ]
         }
     ]

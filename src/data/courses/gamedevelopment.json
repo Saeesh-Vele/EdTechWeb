@@ -61,7 +61,7 @@
       "description": "High-end rendering techniques used to achieve realistic lighting, materials, and visual effects in modern games.",
       "notes": "Covers physically-based rendering (PBR), global illumination, ray tracing, reflections, volumetric effects, and advanced shadowing techniques. These methods push realism but require optimization for real-time performance.",
       "videos": [
-        "https://www.youtube.com/embed/91hx6P5nC6k"
+        "https://www.youtube.com/watch?v=dj4kNnj4FAQ"
       ]
     }
   ]

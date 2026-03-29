@@ -1,0 +1,250 @@
+/* ─── Module List ─── */
+.module-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ─── Module Item (horizontal row) ─── */
+.module-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 18px 22px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.module-item:hover {
+  background: #161616;
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateX(2px);
+}
+
+/* ─── Left: Number / Dot ─── */
+.module-left {
+  width: 40px;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #e5e7eb;
+  font-family: var(--font-mono, 'SF Mono', 'Fira Code', monospace);
+}
+
+.module-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e5e7eb;
+}
+
+/* ─── Center: Content ─── */
+.module-content {
+  flex: 1;
+  min-width: 0;
+  margin-left: 4px;
+}
+
+.module-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+
+.module-desc {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ─── Right: Actions ─── */
+.module-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.module-action-btn {
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+.module-action-btn:hover {
+  background: #e5e7eb;
+  transform: translateY(-1px);
+}
+
+.module-action-btn--secondary {
+  background: transparent;
+  color: #9ca3af;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.module-action-btn--secondary:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ─── Empty State ─── */
+.module-empty {
+  padding: 48px 24px;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 640px) {
+  .module-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .module-left {
+    width: auto;
+    min-width: auto;
+  }
+
+  .module-actions {
+    width: 100%;
+  }
+
+  .module-action-btn {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   Video Player — Full-width Primary Player
+   ═══════════════════════════════════════════ */
+
+.video-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.video-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.video-player {
+  width: 100%;
+  height: 60vh;
+  min-height: 360px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.4),
+    0 20px 60px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.video-player:hover {
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.5),
+    0 24px 72px rgba(0, 0, 0, 0.4);
+}
+
+.video-player iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.video-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-align: center;
+  margin: 0;
+  padding: 4px 0;
+}
+
+/* ═══════════════════════
+   Notes Section
+   ═══════════════════════ */
+
+.notes-section {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.notes-section__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.01em;
+}
+
+.notes-section__body {
+  font-size: 15px;
+  color: #d1d5db;
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
+/* ─── Video Responsive ─── */
+@media (max-width: 768px) {
+  .video-player {
+    height: 40vh;
+    min-height: 240px;
+    border-radius: 12px;
+  }
+
+  .notes-section {
+    padding: 20px;
+  }
+}

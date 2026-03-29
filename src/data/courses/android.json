@@ -34,7 +34,7 @@
             "description": "Core building blocks of Android applications.",
             "notes": "Includes Activities, Intents, Services, Broadcast Receivers, and Content Providers. Understand lifecycle and communication between components.",
             "videos": [
-                "https://www.youtube.com/embed/2kH0x1V3vYI"
+                "https://www.youtube.com/watch?v=SJw3Nu_h8kk"
             ]
         },
         {
@@ -43,7 +43,7 @@
             "description": "Designing user interfaces using traditional XML layouts and modern Jetpack Compose.",
             "notes": "Covers layouts (ConstraintLayout), views, fragments, animations, and Compose for declarative UI development.",
             "videos": [
-                "https://www.youtube.com/embed/lJdXhQjgn6k"
+                "https://www.youtube.com/watch?v=wIuVvCuiJhU"
             ]
         },
         {
@@ -52,7 +52,7 @@
             "description": "Handling screen transitions and user interactions within the app.",
             "notes": "Includes Navigation Components, fragments, back stack management, and deep linking.",
             "videos": [
-                "https://www.youtube.com/embed/4q5QkT9ZlVQ"
+                "https://www.youtube.com/watch?v=U7rS_2ch_Ps"
             ]
         },
         {
@@ -61,7 +61,7 @@
             "description": "Structuring apps using scalable and maintainable architectural patterns.",
             "notes": "Includes MVVM, MVI, MVC, repository pattern, and clean architecture principles.",
             "videos": [
-                "https://www.youtube.com/embed/8YPXv7xKh2w"
+                "https://www.youtube.com/watch?v=tv-_1er1mWI"
             ]
         },
         {
@@ -79,7 +79,7 @@
             "description": "Communicating with external APIs and services.",
             "notes": "Includes REST APIs, Retrofit, OkHttp, JSON parsing, and GraphQL (Apollo Android).",
             "videos": [
-                "https://www.youtube.com/embed/4q5QkT9ZlVQ"
+                "https://www.youtube.com/watch?v=IPvYjXCsTg8"
             ]
         },
         {
@@ -88,7 +88,7 @@
             "description": "Handling background tasks, testing apps, and distributing them to users.",
             "notes": "Includes coroutines, RxJava, WorkManager, unit/UI testing (JUnit, Espresso), debugging tools, and publishing apps via Google Play Store.",
             "videos": [
-                "https://www.youtube.com/embed/6Wb6bC7V4cM"
+                "https://www.youtube.com/watch?v=AWVTKBUnoIg"
             ]
         }
     ]

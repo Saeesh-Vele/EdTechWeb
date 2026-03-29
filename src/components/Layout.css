@@ -41,7 +41,7 @@
 }
 .sidebar__nav-item:hover   { color: var(--color-white); background: rgba(255,255,255,.06); }
 .sidebar__nav-item.active  { color: var(--color-white); background: rgba(255,255,255,.1); }
-.sidebar__nav-item .nav-icon { font-size: 16px; opacity: .7; }
+.sidebar__nav-item .nav-icon { font-size: 16px; opacity: .7; display: inline-flex; align-items: center; }
 .sidebar__nav-item.active .nav-icon,
 .sidebar__nav-item:hover  .nav-icon { opacity: 1; }
 .sidebar__nav-item .nav-badge {

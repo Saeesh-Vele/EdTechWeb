@@ -88,7 +88,7 @@
             "description": "Processes and tools used to deploy applications and monitor their performance in production environments.",
             "notes": "Covers GitHub Actions for CI/CD, application deployment strategies, logging, monitoring tools, and performance tracking to ensure reliability.",
             "videos": [
-                "https://www.youtube.com/embed/SCd6fO6uHOk"
+                "https://www.youtube.com/watch?v=J9JbzsufemE&t=280s"
             ]
         }
     ]

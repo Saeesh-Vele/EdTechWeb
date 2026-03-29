@@ -138,9 +138,7 @@ const LandingPage: FC<LandingPageProps> = ({ showToast }) => {
             <button className="btn btn-primary" onClick={() => navigate("/auth")}>
               Create Free Account
             </button>
-            <button className="btn btn-outline" onClick={() => navigate("/dashboard")}>
-              View Dashboard Demo
-            </button>
+
           </div>
         </div>
       </section>
@@ -156,7 +154,7 @@ const LandingPage: FC<LandingPageProps> = ({ showToast }) => {
                 style={{ background: "none", border: "none", cursor: "pointer" }}
               >
                 <div className="nav__logo-icon"><span>S</span></div>
-                Smart EdTech
+                SkillWeave
               </button>
               <p>Reimagining education through intelligent technology solutions.</p>
             </div>
@@ -165,7 +163,7 @@ const LandingPage: FC<LandingPageProps> = ({ showToast }) => {
               <ul>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
-                <li><button style={{ background: "none", border: "none", cursor: "pointer", color: "var(--color-grey-200)", fontSize: 14, padding: 0 }} onClick={() => navigate("/dashboard")}>Dashboard</button></li>
+                <li><button style={{ background: "none", border: "none", cursor: "pointer", color: "var(--color-grey-200)", fontSize: 14, padding: 0 }} onClick={() => navigate("/auth")}>Dashboard</button></li>
               </ul>
             </div>
             <div className="footer__links-group">
@@ -184,8 +182,8 @@ const LandingPage: FC<LandingPageProps> = ({ showToast }) => {
             </div>
           </div>
           <div className="footer__bottom">
-            <span>© 2025 Smart EdTech Solutions. Built for the Hackathon.</span>
-            <span>Made with ♥ by the team</span>
+            <span>© 2026 SkillWeave Solutions.</span>
+            <span>Made with ♥ by the team Mugiwara</span>
           </div>
         </div>
       </footer>

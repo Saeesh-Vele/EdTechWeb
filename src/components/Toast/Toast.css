@@ -14,7 +14,7 @@
   color: var(--color-white);
   padding: 12px 18px;
   border-radius: var(--radius-md);
-  fontSize: 14px;
+  font-size: 14px;
   font-family: var(--font-body);
   box-shadow: var(--shadow-md);
   max-width: 320px;
@@ -24,3 +24,9 @@
   border-color: rgba(252,165,165,0.5);
   color: #fca5a5;
 }
+
+.toast-success {
+  border-color: rgba(94,203,140,0.5);
+  color: #5ecb8c;
+}
+

@@ -7,10 +7,11 @@ export const ToastContainer: FC<{ toasts: Toast[] }> = ({ toasts }) => (
     {toasts.map((t) => (
       <div
         key={t.id}
-        className={`toast-item fade-up ${t.type === "error" ? "toast-error" : ""}`}
+        className={`toast-item fade-up${t.type === "error" ? " toast-error" : ""}${t.type === "success" ? " toast-success" : ""}`}
       >
         {t.message}
       </div>
     ))}
   </div>
 );
+

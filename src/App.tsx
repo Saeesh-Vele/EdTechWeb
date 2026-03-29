@@ -3,6 +3,7 @@ import React, { type FC } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import "./index.css";
 import { useToast } from "./hooks/useToast";
+import { useAuth } from "./context/AuthContext";
 
 import LandingPage from "./pages/LandingPage/LandingPage";
 import AuthPage from "./pages/AuthPage/AuthPage";
@@ -32,6 +33,14 @@ import Layout from "./components/Layout";
 import { ToastContainer } from "./components/Toast/Toast";
 import CareerChatbot from "./components/CareerChatbot/CareerChatbot";
 
+/* ─── Protected Route ─────────────────────────────────────── */
+const ProtectedRoute: FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { user, loading } = useAuth();
+  if (loading) return null;
+  if (!user) return <Navigate to="/auth" replace />;
+  return <>{children}</>;
+};
+
 const App: FC = () => {
   const { toasts, showToast } = useToast();
 
@@ -42,7 +51,14 @@ const App: FC = () => {
 
         <Route path="/auth" element={<AuthPage showToast={showToast} />} />
 
-        <Route path="/dashboard" element={<DashboardPage showToast={showToast} />}>
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardPage showToast={showToast} />
+            </ProtectedRoute>
+          }
+        >
           <Route index element={<DashboardOverview />} />
           <Route path="allcourses" element={<AllCourses />} />
           <Route path="my-courses" element={<MyCoursesList />} />

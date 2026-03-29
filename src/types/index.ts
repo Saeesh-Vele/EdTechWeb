@@ -1,5 +1,5 @@
 export type AuthTab = "login" | "signup";
-export type ToastType = "info" | "error";
+export type ToastType = "info" | "error" | "success";
 
 export interface Toast {
   id: string;

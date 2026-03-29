@@ -1,5 +1,8 @@
 import React, { useState, type FC } from "react";
 import { Outlet, useNavigate, NavLink } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import { auth } from "../../firebase/config";
+import { useAuth } from "../../context/AuthContext";
 import {
   FiHome,
   FiLayers,
@@ -21,7 +24,20 @@ interface DashboardPageProps {
 
 const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate("/auth");
+    } catch (err) {
+      console.error("Logout error:", err);
+    }
+  };
+
+  const displayName = user?.displayName || user?.email || "User";
+  const userInitial = displayName.charAt(0).toUpperCase();
 
   return (
     <div className="dashboard-page">
@@ -82,13 +98,13 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
         </nav>
 
         <div className="sidebar__footer">
-          <button className="sidebar__nav-item" onClick={() => navigate("/auth")}>
+          <button className="sidebar__nav-item" onClick={handleLogout}>
             <span className="nav-icon"><FiLogOut /></span> Logout
           </button>
           <div className="sidebar__user">
-            <div className="user-avatar">R</div>
+            <div className="user-avatar">{userInitial}</div>
             <div className="user-info">
-              <div className="user-info__name">Ravi Kumar</div>
+              <div className="user-info__name">{displayName}</div>
               <div className="user-info__role">Student</div>
             </div>
           </div>
@@ -117,7 +133,7 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
             <button className="icon-btn">
               <FiBell /> <span className="badge">2</span>
             </button>
-            <div className="user-avatar" style={{ width: 32, height: 32 }}><span>R</span></div>
+            <div className="user-avatar" style={{ width: 32, height: 32 }}><span>{userInitial}</span></div>
           </div>
         </header>
 

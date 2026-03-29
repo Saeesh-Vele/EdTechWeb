@@ -31,7 +31,7 @@ const Nav: React.FC = () => {
           className="navbar-brand"
           onClick={() => navigate("/")}
         >
-          Smart EdTech
+          SkillWeave
         </button>
 
         {/* RIGHT SIDE */}
@@ -73,7 +73,7 @@ const Nav: React.FC = () => {
                 className="navbar-brand"
                 onClick={() => navigate("/")}
               >
-                Smart EdTech
+                SkillWeave
               </button>
 
               <button

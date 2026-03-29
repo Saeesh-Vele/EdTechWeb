@@ -30,7 +30,8 @@ export interface QuizQuestion {
 export const generateQuestions = async (
   domain: string,
   skill: string,
-  difficulty: "Easy" | "Medium" | "Hard"
+  difficulty: "Easy" | "Medium" | "Hard",
+  numQuestions: number = 5
 ): Promise<QuizQuestion[]> => {
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
@@ -38,7 +39,7 @@ export const generateQuestions = async (
     throw new Error("Gemini API Key is missing. Please add VITE_GEMINI_API_KEY to your .env.local file.");
   }
 
-  const prompt = `You are an expert ${domain} instructor. Generate exactly 5 relevant ${difficulty} difficulty multiple-choice questions about "${skill}" within the domain of "${domain}".
+  const prompt = `You are an expert ${domain} instructor. Generate exactly ${numQuestions} relevant ${difficulty} difficulty multiple-choice questions about "${skill}" within the domain of "${domain}".
 Each question should be structured with 4 clear options, the correct answer, a short explanation, and a specific subtopic for the question.
 
 Return the result STRICTLY as a JSON array of objects with the following keys and no extra text or markdown formatting:
@@ -89,8 +90,8 @@ Return the result STRICTLY as a JSON array of objects with the following keys an
 
   try {
     const parsedData = JSON.parse(textPart);
-    if (!Array.isArray(parsedData) || parsedData.length !== 5) {
-      throw new Error("Gemini did not return exactly 5 questions.");
+    if (!Array.isArray(parsedData) || parsedData.length !== numQuestions) {
+      throw new Error(`Gemini did not return exactly ${numQuestions} questions.`);
     }
     return parsedData as QuizQuestion[];
   } catch (error) {

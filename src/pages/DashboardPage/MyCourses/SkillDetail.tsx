@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import useStudyTracker from "../../../hooks/useStudyTracker";
 
 interface Skill {
   id?: string;
@@ -14,6 +15,13 @@ const SkillDetail = () => {
   const navigate = useNavigate();
   const [skill, setSkill] = useState<Skill | null>(null);
   const [loading, setLoading] = useState(true);
+
+  // Track study time on skill detail pages
+  useStudyTracker({
+    type: 'video',
+    skill: skillName || '',
+    domain: courseName || ''
+  });
 
   useEffect(() => {
     const fetchSkillData = async () => {

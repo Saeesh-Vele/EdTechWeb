@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { generateRevisionNotes, type RevisionTopic } from '../../utils/gemini';
+import useStudyTracker from '../../hooks/useStudyTracker';
 
 const Revision: React.FC = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const topics: string[] = location.state?.topics || [];
+
+    // Track study time on revision pages
+    useStudyTracker({
+        type: 'notes',
+        skill: topics.join(', '),
+        domain: 'Revision'
+    });
 
     const [revisionData, setRevisionData] = useState<RevisionTopic[]>([]);
     const [loading, setLoading] = useState<boolean>(true);

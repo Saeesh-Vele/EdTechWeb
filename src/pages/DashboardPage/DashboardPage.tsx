@@ -11,8 +11,6 @@ import {
   FiTrendingUp,
   FiSettings,
   FiLogOut,
-  FiBell,
-  FiSearch,
   FiMenu,
 } from "react-icons/fi";
 
@@ -103,16 +101,8 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
           >
             <span className="nav-icon"><FiCheckSquare /></span> Assessments
           </NavLink>
-          <button className="sidebar__nav-item">
-            <span className="nav-icon"><FiTrendingUp /></span> Progress
-          </button>
 
-          <p className="sidebar__section-label">System</p>
-          <button className="sidebar__nav-item">
-            <span className="nav-icon"><FiSettings /></span> Settings
-          </button>
         </nav>
-
         <div className="sidebar__footer">
           <button className="sidebar__nav-item" onClick={handleLogout}>
             <span className="nav-icon"><FiLogOut /></span> Logout
@@ -139,53 +129,13 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
 
       {/* Main Content */}
       <main className="dashboard-main">
-        <header className="dash-topbar">
-          <div className="dash-topbar__left">
-            <button
-              className="sidebar-toggle"
-              onClick={() => setSidebarOpen((o) => !o)}
-            >
-              <FiMenu />
-            </button>
-            <h2 className="dash-topbar__title">Overview</h2>
-          </div>
-
-          <div className="dash-topbar__search">
-            <span className="dash-topbar__search-icon"><FiSearch /></span>
-            <input type="text" placeholder="Search courses, students..." />
-          </div>
-
-          <div className="dash-topbar__actions">
-            <button className="icon-btn">
-              <FiBell /> <span className="badge">2</span>
-            </button>
-
-            <div className="relative group cursor-pointer">
-              {user?.photoURL ? (
-                <img src={user.photoURL} alt="profile" className="w-8 h-8 rounded-full object-cover border border-[#333]" />
-              ) : (
-                <div className="user-avatar flex items-center justify-center font-bold" style={{ width: 32, height: 32 }}><span>{user?.displayName?.[0]?.toUpperCase() || "U"}</span></div>
-              )}
-
-              {/* Dropdown Menu */}
-              <div className="absolute right-0 top-full mt-2 w-48 bg-[#111] border border-[#333] rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
-                <div className="p-3 border-b border-[#333]">
-                  <p className="text-white text-sm font-semibold truncate leading-tight">{user?.displayName || "User"}</p>
-                  <p className="text-gray-400 text-xs truncate mt-0.5">{user?.email || ""}</p>
-                </div>
-                <div className="p-1.5">
-                  <button className="w-full text-left px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors flex items-center gap-2">
-                    <span>⚙️</span> Settings
-                  </button>
-                  <button onClick={() => navigate("/auth")} className="w-full text-left px-3 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-red-500/10 rounded-lg transition-colors flex items-center gap-2">
-                    <span>🚪</span> Logout
-                  </button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </header>
+        {/* Mobile sidebar toggle */}
+        <button
+          className="sidebar-toggle"
+          onClick={() => setSidebarOpen((o) => !o)}
+        >
+          <FiMenu />
+        </button>
 
         <div className="dash-content">
           <Outlet context={{ user }} />

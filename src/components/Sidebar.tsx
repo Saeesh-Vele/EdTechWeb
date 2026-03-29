@@ -48,7 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
         >
           <span className="nav-icon"><FiLayers /></span> All Courses
         </NavLink>
-        
+
         <p className="sidebar__section-label" style={{ marginTop: '1rem' }}>My Courses</p>
         <NavLink
           to="/dashboard/my-courses"
@@ -64,27 +64,14 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
         >
           <span className="nav-icon"><FiCheckSquare /></span> Assessments
         </NavLink>
-        <button className="sidebar__nav-item">
-          <span className="nav-icon"><FiTrendingUp /></span> Progress
-        </button>
 
-        <p className="sidebar__section-label">System</p>
-        <button className="sidebar__nav-item">
-          <span className="nav-icon"><FiSettings /></span> Settings
-        </button>
       </nav>
 
       <div className="sidebar__footer">
         <button className="sidebar__nav-item" onClick={() => navigate("/auth")}>
           <span className="nav-icon"><FiLogOut /></span> Logout
         </button>
-        <div className="sidebar__user">
-          <div className="user-avatar">R</div>
-          <div className="user-info">
-            <div className="user-info__name">Ravi Kumar</div>
-            <div className="user-info__role">Student</div>
-          </div>
-        </div>
+
       </div>
     </aside>
   );

@@ -133,7 +133,7 @@ body {
 
 /* ===== CTA BUTTON ===== */
 .navbar-cta-btn {
-  background: linear-gradient(135deg, #dfe6b8, #c7d48a);
+  background: #ffffff;
   color: #111;
 
   padding: 6px 18px;
@@ -146,12 +146,12 @@ body {
   cursor: pointer;
 
   transition: all 0.25s ease;
-  box-shadow: 0 4px 14px rgba(223, 230, 184, 0.25);
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
 }
 
 .navbar-cta-btn:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 6px 20px rgba(223, 230, 184, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
 }
 
 /* ===== MOBILE TOGGLE ===== */

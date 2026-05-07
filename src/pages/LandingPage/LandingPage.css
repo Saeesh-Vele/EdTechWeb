@@ -146,7 +146,7 @@
 .stats-bar {
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
-  padding: 32px 0;
+  padding: 16px 0;
 }
 
 .stats-bar__inner {

@@ -5,7 +5,7 @@
 
 /* ===== GLOBAL ===== */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
 }
 
 /* ===== NAVBAR CONTAINER ===== */
@@ -86,7 +86,7 @@ body {
 
 /* ===== LOGO ===== */
 .navbar-brand {
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-display);
   font-size: 16px;
   font-weight: 600;
   color: white;

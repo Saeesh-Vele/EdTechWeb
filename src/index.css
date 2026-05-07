@@ -24,9 +24,9 @@
   --color-accent-dim:#cccccc;
 
   /* Typography */
-  --font-display: 'Syne', sans-serif;
-  --font-body:    'DM Sans', sans-serif;
-  --font-mono:    'JetBrains Mono', monospace;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body:    'Nunito', sans-serif;
+  --font-mono:    'Nunito', sans-serif;
 
   /* Sizing */
   --radius-sm:   4px;

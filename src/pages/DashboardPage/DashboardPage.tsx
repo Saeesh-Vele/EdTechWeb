@@ -45,7 +45,7 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      navigate("/auth");
+      navigate("/");
     } catch (err) {
       console.error("Logout error:", err);
     }

@@ -68,7 +68,7 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
       </nav>
 
       <div className="sidebar__footer">
-        <button className="sidebar__nav-item" onClick={() => navigate("/auth")}>
+        <button className="sidebar__nav-item" onClick={() => navigate("/")}>
           <span className="nav-icon"><FiLogOut /></span> Logout
         </button>
 

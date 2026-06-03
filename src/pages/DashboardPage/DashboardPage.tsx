@@ -12,7 +12,6 @@ import {
   FiSettings,
   FiLogOut,
   FiMenu,
-  FiActivity,
 } from "react-icons/fi";
 
 import type { ToastType } from "../../types";
@@ -101,15 +100,6 @@ const DashboardPage: FC<DashboardPageProps> = ({ showToast }) => {
             onClick={() => setSidebarOpen(false)}
           >
             <span className="nav-icon"><FiCheckSquare /></span> Assessments
-          </NavLink>
-
-          <p className="sidebar__section-label">Analytics</p>
-          <NavLink
-            to="/dashboard/hindsight"
-            className={({ isActive }) => `sidebar__nav-item${isActive ? " active" : ""}`}
-            onClick={() => setSidebarOpen(false)}
-          >
-            <span className="nav-icon"><FiActivity /></span> Hindsight
           </NavLink>
 
           <p className="sidebar__section-label">System</p>
